@@ -28,8 +28,6 @@ Min 是一套面向小程序的开发环境，提供 [Min Cli](https://github.co
 
 ![](http://s3.mogucdn.com/mlcdn/c45406/171103_5l89d0ih87eh9e715065310ekgdea_220x220.png)
 
-> 注：如提示“小程序尚未发布”，就再等等再扫，小程序的发布有个审核期 :p
-
 #### 本地体验
 
 1. 安装 Min 的环境 `$ npm install -g @mindev/min-cli`
