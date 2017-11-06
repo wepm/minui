@@ -40,6 +40,14 @@ export default {
   data: {
     menus
   },
+  onShareAppMessage: function () {
+    return {
+      title: 'MinUI 小程序组件库。基于规范，轻量、易用、工具化',
+      desc: '',
+      path: '/pages/home/index',
+      imageUrl: 'https://s10.mogucdn.com/mlcdn/c45406/171106_2ccdl8620ca0b2dkj58l8kgb2l0k5_690x500.png'
+    }
+  },
   kindToggle: function (e) {
     const { id } = e.currentTarget
     const { menus } = this.data
