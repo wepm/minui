@@ -27,6 +27,8 @@
         </block>
       </view>
     </view>
+
+    <view class="index-ft">https://github.com/meili/minui</view>
   </view>
 </template>
 
@@ -57,5 +59,14 @@ export default {
 </script>
 
 <style>
-@import "assets/style/layout.wxss";
+  @import "assets/style/layout.wxss";
+
+  .index-ft {
+    font-family: monospace;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: #888;
+    font-size: 28rpx;
+    margin-top: -25rpx;
+  }
 </style>
