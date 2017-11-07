@@ -49,7 +49,13 @@ export default {
       'demo-user-loading': './demos/demo-user-loading'
     }
   },
-  data: {}
+  data: {},
+  onShareAppMessage: function () {
+    return {
+      title: '加载更多 - MinUI小程序组件库',
+      path: '/pages/loadmore/index'
+    }
+  }
 }
 </script>
 

@@ -43,7 +43,13 @@ export default {
       'demo-right': './demos/demo-right'
     }
   },
-  data: {}
+  data: {},
+  onShareAppMessage: function () {
+    return {
+      title: '基础弹层 - MinUI小程序组件库',
+      path: '/pages/popup/index'
+    }
+  }
 }
 </script>
 

@@ -34,6 +34,12 @@ export default {
     }
   },
   data: {},
+  onShareAppMessage: function () {
+    return {
+      title: '倒计时 - MinUI小程序组件库',
+      path: '/pages/countdown/index'
+    }
+  },
   methods: {
     onRunCount() {
 

@@ -39,7 +39,13 @@ export default {
       'demo-dot': './demos/demo-dot'
     }
   },
-  data: {}
+  data: {},
+  onShareAppMessage: function () {
+    return {
+      title: '徽章 - MinUI小程序组件库',
+      path: '/pages/badge/index'
+    }
+  }
 }
 </script>
 

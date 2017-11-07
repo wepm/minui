@@ -33,7 +33,13 @@ export default {
       'demo-user': './demos/demo-user',
     }
   },
-  data: {}
+  data: {},
+  onShareAppMessage: function () {
+    return {
+      title: '选项卡 - MinUI小程序组件库',
+      path: '/pages/tab/index'
+    }
+  }
 }
 </script>
 

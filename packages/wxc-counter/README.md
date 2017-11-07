@@ -8,6 +8,7 @@
 $ min install @minui/wxc-counter
 ```
 
+<br/>
 
 > Please make sure you have installed [Min-Cli](https://github.com/meili/min-cli) ☟
 

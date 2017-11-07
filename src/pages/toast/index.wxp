@@ -44,7 +44,13 @@ export default {
       'demo-icon-image': './demos/demo-icon-image'
     }
   },
-  data: {}
+  data: {},
+  onShareAppMessage: function () {
+    return {
+      title: '提示框 - MinUI小程序组件库',
+      path: '/pages/toast/index'
+    }
+  }
 }
 </script>
 

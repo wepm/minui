@@ -24,7 +24,13 @@ export default {
       'demo-multiple': './demos/demo-multiple'
     }
   },
-  data: {}
+  data: {},
+  onShareAppMessage: function () {
+    return {
+      title: '文本截断 - MinUI小程序组件库',
+      path: '/pages/elip/index'
+    }
+  }
 }
 </script>
 

@@ -47,7 +47,13 @@ export default {
       'demo-radius': './demos/demo-radius'
     }
   },
-  data: {}
+  data: {},
+  onShareAppMessage: function () {
+    return {
+      title: '进度条 - MinUI小程序组件库',
+      path: '/pages/progress/index'
+    }
+  }
 }
 </script>
 

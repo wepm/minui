@@ -19,7 +19,13 @@ export default {
       'demo-default': './demos/demo-default'
     }
   },
-  data: {}
+  data: {},
+  onShareAppMessage: function () {
+    return {
+      title: '步骤条 - MinUI小程序组件库',
+      path: '/pages/steps/index'
+    }
+  }
 }
 </script>
 
