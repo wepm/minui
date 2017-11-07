@@ -48,7 +48,13 @@ export default {
       'demo-layout': './demos/demo-layout'
     }
   },
-  data: {}
+  data: {},
+  onShareAppMessage: function () {
+    return {
+      title: 'Flex 容器 - MinUI小程序组件库',
+      path: '/pages/flex/index'
+    }
+  }
 }
 </script>
 

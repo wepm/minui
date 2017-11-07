@@ -44,7 +44,13 @@ export default {
       'demo-locked': './demos/demo-locked'
     }
   },
-  data: {}
+  data: {},
+  onShareAppMessage: function () {
+    return {
+      title: '遮罩层 - MinUI小程序组件库',
+      path: '/pages/mask/index'
+    }
+  }
 }
 </script>
 

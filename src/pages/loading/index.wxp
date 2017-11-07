@@ -23,7 +23,13 @@ export default {
       'demo-custom': './demos/demo-custom',
     }
   },
-  data: {}
+  data: {},
+  onShareAppMessage: function () {
+    return {
+      title: '加载提示 - MinUI小程序组件库',
+      path: '/pages/loading/index'
+    }
+  }
 }
 </script>
 

@@ -8,6 +8,8 @@
 $ min install @minui/wxc-mask
 ```
 
+<br/>
+
 > Please make sure you have installed [Min-Cli](https://github.com/meili/min-cli) ☟
 
 ```

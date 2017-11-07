@@ -31,7 +31,13 @@ export default {
       'demo-min': './demos/demo-min'
     }
   },
-  data: {}
+  data: {},
+  onShareAppMessage: function () {
+    return {
+      title: '数字框 - MinUI小程序组件库',
+      path: '/pages/counter/index'
+    }
+  }
 }
 </script>
 

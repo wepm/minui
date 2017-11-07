@@ -8,6 +8,8 @@
 $ min install @minui/wxc-icon
 ```
 
+<br/>
+
 > Please make sure you have installed [Min-Cli](https://github.com/meili/min-cli) ☟
 
 ```

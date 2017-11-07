@@ -1,5 +1,5 @@
 <template>
-  <example title="switch" desc="组件描述">
+  <example title="switch" desc="开关">
 
     <example-demo title="默认用法" desc="">
       <demo-default></demo-default>
@@ -33,7 +33,13 @@ export default {
       'demo-callback': './demos/demo-callback'
     }
   },
-  data: {}
+  data: {},
+  onShareAppMessage: function () {
+    return {
+      title: '开关 - MinUI小程序组件库',
+      path: '/pages/switch/index'
+    }
+  }
 }
 </script>
 

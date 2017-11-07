@@ -78,7 +78,13 @@ export default {
       'demo-custom': './demos/demo-custom',
     }
   },
-  data: {}
+  data: {},
+  onShareAppMessage: function () {
+    return {
+      title: '异常流展示 - MinUI小程序组件库',
+      path: '/pages/abnor/index'
+    }
+  }
 }
 </script>
 

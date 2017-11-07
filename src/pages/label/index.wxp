@@ -38,7 +38,13 @@ export default {
       'demo-corner': './demos/demo-corner'
     }
   },
-  data: {}
+  data: {},
+  onShareAppMessage: function () {
+    return {
+      title: '标签 - MinUI小程序组件库',
+      path: '/pages/label/index'
+    }
+  }
 }
 </script>
 

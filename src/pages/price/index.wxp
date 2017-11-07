@@ -54,7 +54,13 @@
         'demo-small': './demos/demo-small'
       }
     },
-    data: {}
+    data: {},
+    onShareAppMessage: function () {
+      return {
+        title: '价格 - MinUI小程序组件库',
+        path: '/pages/price/index'
+      }
+    }
   }
 </script>
 
