@@ -10,13 +10,13 @@ module.exports = {
           "id": "color",
           "name": "颜色",
           "icon": "",
-          "code": ""
+          "code": "https://s10.mogucdn.com/mlcdn/c45406/171107_11bia820k8j1djja0kl0ce8ejce5g_480x480.jpg"
         },
         {
           "id": "font",
           "name": "文字",
           "icon": "",
-          "code": ""
+          "code": "https://s10.mogucdn.com/mlcdn/c45406/171107_31b09klh28f5i7lkcg2h4d7jaikhk_480x480.jpg"
         }
       ]
     },
@@ -30,7 +30,7 @@ module.exports = {
           "id": "flex",
           "name": "flex",
           "icon": "",
-          "code": ""
+          "code": "https://s10.mogucdn.com/mlcdn/c45406/171107_644d29k85d23lgafie50h51ci8gg1_480x480.jpg"
         }
       ]
     },
@@ -44,43 +44,43 @@ module.exports = {
           "id": "badge",
           "name": "徽章",
           "icon": "",
-          "code": ""
+          "code": "https://s10.mogucdn.com/mlcdn/c45406/171107_25lc3e196cf6bg7d05e42h790e73g_480x480.jpg"
         },
         {
           "id": "elip",
           "name": "文本截断",
           "icon": "",
-          "code": ""
+          "code": "https://s10.mogucdn.com/mlcdn/c45406/171107_4j58g41335a4igeih07a4dedl34fi_480x480.jpg"
         },
         {
           "id": "icon",
           "name": "图标",
           "icon": "",
-          "code": ""
+          "code": "https://s10.mogucdn.com/mlcdn/c45406/171107_1ab45l563alfj6jkeeij1jf0k06h0_480x480.jpg"
         },
         {
           "id": "label",
           "name": "标签",
           "icon": "",
-          "code": ""
+          "code": "https://s10.mogucdn.com/mlcdn/c45406/171107_1ik5352h7834dh63l5fj23e3i8ldd_480x480.jpg"
         },
         {
           "id": "loadmore",
           "name": "页底提示",
           "icon": "",
-          "code": ""
+          "code": "https://s10.mogucdn.com/mlcdn/c45406/171107_71417l8a3gj27i2gb97f05j4j1bb7_480x480.jpg"
         },
         {
           "id": "price",
           "name": "价格",
           "icon": "",
-          "code": ""
+          "code": "https://s10.mogucdn.com/mlcdn/c45406/171107_2ihj6754hg63gahdhljb2c1hcdeg9_480x480.jpg"
         },
         {
           "id": "progress",
           "name": "进度条",
           "icon": "",
-          "code": ""
+          "code": "https://s10.mogucdn.com/mlcdn/c45406/171107_5f3k62j3l78g2kh8ggdle7g3e9jd7_480x480.jpg"
         }
       ]
     },
@@ -94,43 +94,43 @@ module.exports = {
           "id": "abnor",
           "name": "异常流展示",
           "icon": "",
-          "code": ""
+          "code": "https://s10.mogucdn.com/mlcdn/c45406/171107_3ddh6idjk6f6i6h67j013594k8910_480x480.jpg"
         },
         {
           "id": "countdown",
           "name": "倒计时",
           "icon": "",
-          "code": ""
+          "code": "https://s10.mogucdn.com/mlcdn/c45406/171107_34c43132g11j166hficgei36665aa_480x480.jpg"
         },
         {
           "id": "counter",
           "name": "数字框",
           "icon": "",
-          "code": ""
+          "code": "https://s10.mogucdn.com/mlcdn/c45406/171107_8f74132b6gi7gb1kaej6icddf7e88_480x480.jpg"
         },
         {
           "id": "loading",
           "name": "加载提示",
           "icon": "",
-          "code": ""
+          "code": "https://s10.mogucdn.com/mlcdn/c45406/171107_6b352846ldeeacf3akjf7jh0189ji_480x480.jpg"
         },
         {
           "id": "mask",
           "name": "遮罩层",
           "icon": "",
-          "code": ""
+          "code": "https://s10.mogucdn.com/mlcdn/c45406/171107_27jgk40354eflg8e35c7fhl4ec35f_480x480.jpg"
         },
         {
           "id": "steps",
           "name": "步骤条",
           "icon": "",
-          "code": ""
+          "code": "https://s10.mogucdn.com/mlcdn/c45406/171107_1cf7e9kbg5bi3l0ahj4ghb627jeb1_480x480.jpg"
         },
         {
           "id": "tab",
           "name": "选项卡",
           "icon": "",
-          "code": ""
+          "code": "https://s10.mogucdn.com/mlcdn/c45406/171107_7eaagk5jeh09jj72h677gcd2g6j2c_480x480.jpg"
         }
       ]
     },
@@ -144,19 +144,19 @@ module.exports = {
           "id": "dialog",
           "name": "对话框",
           "icon": "",
-          "code": ""
+          "code": "https://s10.mogucdn.com/mlcdn/c45406/171107_1a6e68g65akjebkb73gab3bi37jj8_480x480.jpg"
         },
         {
           "id": "popup",
           "name": "弹出层",
           "icon": "",
-          "code": ""
+          "code": "https://s10.mogucdn.com/mlcdn/c45406/171107_68e8eb623kc5gk73j8f6f99clfc4f_480x480.jpg"
         },
         {
           "id": "toast",
           "name": "提示框",
           "icon": "",
-          "code": ""
+          "code": "https://s10.mogucdn.com/mlcdn/c45406/171107_1361j09d04c4426a5gd743i7kk5hg_480x480.jpg"
         }
       ]
     }
