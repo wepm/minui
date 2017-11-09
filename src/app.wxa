@@ -41,6 +41,12 @@
             iconPath: 'common/assets/tab/tools-normal.png',
             selectedIconPath: 'common/assets/tab/tools-active.png',
             text: '工具化'
+          },
+          {
+            pagePath: 'pages/about/index',
+            iconPath: 'common/assets/tab/about-normal.png',
+            selectedIconPath: 'common/assets/tab/about-active.png',
+            text: '阿波特'
           }
         ]
       },

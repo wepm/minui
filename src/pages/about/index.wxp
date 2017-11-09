@@ -1,0 +1,149 @@
+<template>
+
+  <view class="index-hd">
+    <image class="index-logo"
+           src="https://s10.mogucdn.com/mlcdn/c45406/171109_871803cbeajedk3fabb59jl4idl1c_356x356.png"></image>
+    <view class="index-desc">蘑菇街 - 前端开发团队</view>
+  </view>
+
+  <view class="title--h2">○ 关于我们</view>
+
+  <view class="section section__poetry">
+    <view class="section__p">用最前沿的技术，</view>
+    <view class="section__p">开发最时尚的产品。</view>
+    <view class="section__p">处在科技与人文的交汇，</view>
+    <view class="section__p">做现实的理想主义者。</view>
+    <view class="section__p--for-space"></view>
+
+    <view class="section__p">写 Web，也玩 Node；</view>
+    <view class="section__p">搞 Hybrid，还有小程序。</view>
+    <view class="section__p">他处憧憬的全栈，</view>
+    <view class="section__p">是这里团队的标配。</view>
+    <view class="section__p--for-space"></view>
+
+    <view class="section__p">一起疯，一起浪，</view>
+    <view class="section__p">一起狂，一起扛。</view>
+    <view class="section__p">快乐工作，享受生活。</view>
+    <view class="section__p">很高兴结识您，</view>
+    <view class="section__p">这里是蘑菇街，</view>
+    <view class="section__p">我们是这里的 F2er~</view>
+  </view>
+
+  <view class="title--h2">○ 小程序展示</view>
+
+  <view class="section">
+    <wxc-flex class="weapp__list" cross="top" wrap="wrap">
+      <view class="weapp__item" wx:for="{{weApps}}" wx:for-index="index" wx:for-item="app" >
+        <image id="{{index}}" class="weapp__qrcode" src="{{app.qrcode}}" mode="aspectFit" bindtap="onImageTap" ></image>
+        <text class="weapp__title">{{app.title}}</text>
+      </view>
+
+      <view class="weapp__item">
+        <image class="weapp__qrcode" mode="aspectFit" bindtap="onImageTap" src="https://s10.mogucdn.com/mlcdn/c45406/171109_5742i4ijkbkaghek2k3f2fkclb7ef_356x356.png"></image>
+        <text class="weapp__title">More Coming...</text>
+      </view>
+    </wxc-flex>
+  </view>
+
+</template>
+
+<script>
+  export default {
+    config: {
+      usingComponents: {
+        'wxc-flex': '@minui/wxc-flex'
+      }
+    },
+    data: {
+      weApps: [
+        {
+          'title': '蘑菇街女装精选',
+          'qrcode': 'https://s10.mogucdn.com/mlcdn/c45406/171109_75kgh1k6f0dl7hf67325bcl2dld4c_430x430.jpg'
+        },
+        {
+          'title': '小店微商城',
+          'qrcode': 'https://s10.mogucdn.com/mlcdn/c45406/171109_113k5be6hfhld22lg5cabi6d6fi43_430x430.jpg'
+        },
+        {
+          'title': '超级购物台',
+          'qrcode': 'https://s10.mogucdn.com/mlcdn/c45406/171109_43acl29a9lcidekhbjafjbke2d8a3_430x430.jpg'
+        },
+        {
+          'title': '全球爆款折扣商城',
+          'qrcode': 'https://s10.mogucdn.com/mlcdn/c45406/171109_6c460adf5e8d17d7g52i5e1e7386j_1280x1280.jpg'
+        },
+        {
+          'title': '蘑菇生活优选',
+          'qrcode': 'https://s10.mogucdn.com/mlcdn/c45406/171109_39c1aah1j1hela8i4j9lh34d9gf55_344x344.jpg'
+        }
+      ]
+    },
+    onShareAppMessage: function () {
+      return {
+        title: '团队介绍 - MinUI小程序组件库',
+        path: '/pages/about/index'
+      }
+    },
+    onImageTap(param) {
+      wx.previewImage({
+        current: this.data.weApps[param.currentTarget.id].qrcode,
+        urls: [this.data.weApps[param.currentTarget.id].qrcode]
+      })
+    }
+  }
+</script>
+
+<style>
+  @import "assets/style/layout.wxss";
+
+  .section {
+    padding: 20rpx 40rpx;
+  }
+
+  .section__poetry {
+    padding: 40rpx 80rpx;
+    margin-bottom: 60rpx;
+    color: #777777;
+    text-align: center;
+  }
+
+  .title--h2 {
+    line-height: 70rpx;
+    margin: 20rpx 40rpx;
+    font-size: 32rpx;
+    font-weight: bold;
+    border-bottom: 1px solid #d2d2d2;
+  }
+
+  .section__p {
+    font-size: 28rpx;
+    line-height: 1.6;
+  }
+
+  .section__p--for-space {
+    margin-bottom: 25rpx;
+  }
+
+  .weapp__list {
+    display: block;
+  }
+  .weapp__item {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 45%;
+    margin: 2.5%;
+    overflow: hidden;
+  }
+  .weapp__qrcode {
+    display: block;
+    width: 100%;
+    height: 300rpx;
+  }
+  .weapp__title {
+    display: block;
+    margin-top: 15rpx;
+    font-size: 28rpx;
+    text-align: center;
+    color: #777777;
+  }
+</style>

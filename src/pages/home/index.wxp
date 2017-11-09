@@ -28,7 +28,10 @@
       </view>
     </view>
 
-    <view class="index-ft">https://github.com/meili/minui</view>
+    <view class="index-ft">
+      <image class="github__icon" mode="aspectFit" src="https://s10.mogucdn.com/mlcdn/c45406/171109_6k95i4l5lfcl458a4i7a37jd84598_64x64.png"></image>
+      <text class="github__url">https://github.com/meili/minui</text>
+    </view>
   </view>
 </template>
 
@@ -70,11 +73,20 @@ export default {
   @import "assets/style/layout.wxss";
 
   .index-ft {
-    font-family: monospace;
+    margin-top: -25rpx;
+  }
+  .github__icon {
+    width: 34rpx;
+    height: 34rpx;
+    margin-right: 10rpx;
+    vertical-align: middle;
+  }
+  .github__url {
+    font-family: Monaco;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     color: #888;
-    font-size: 28rpx;
-    margin-top: -25rpx;
+    font-size: 26rpx;
+    vertical-align: middle;
   }
 </style>
