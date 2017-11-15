@@ -31,6 +31,12 @@ module.exports = {
           "name": "flex",
           "icon": "",
           "code": "https://s10.mogucdn.com/mlcdn/c45406/171107_644d29k85d23lgafie50h51ci8gg1_480x480.jpg"
+        },
+        {
+          "id": "cc",
+          "name": "水平垂直居中",
+          "icon": "",
+          "code": "https://s10.mogucdn.com/mlcdn/c45406/171115_2b7djgj18g4gifdkljf60b70kd75k_480x480.jpg"
         }
       ]
     },
