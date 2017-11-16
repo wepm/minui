@@ -92,7 +92,7 @@
             value = parseInt(this.data.value).toString().trim();
 
             this.setData({
-              decimalNum: this.data.value.toString().split('.')[1].trim()
+              decimalNum: (this.data.value.toString().split('.')[1] || '00').trim()
             });
           }
 
