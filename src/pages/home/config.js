@@ -47,6 +47,12 @@ module.exports = {
       icon: 'https://s10.mogucdn.com/mlcdn/c45406/171016_6ce0769fd62l181bi6djf55a0dcg3_68x68.png',
       pages: [
         {
+          "id": "avatar",
+          "name": "头像",
+          "icon": "",
+          "code": "https://s10.mogucdn.com/mlcdn/c45406/171117_3liaj03cde4jh50e06d1jcc73795i_480x480.jpg"
+        },
+        {
           "id": "badge",
           "name": "徽章",
           "icon": "",
