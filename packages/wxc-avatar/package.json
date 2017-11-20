@@ -1,0 +1,23 @@
+{
+  "name": "@minui/wxc-avatar",
+  "version": "1.0.0",
+  "description": "MinUI 小程序组件 - 头像",
+  "main": "dist/index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meili/minui/tree/master/packages/wxc-avatar"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Min Team",
+  "license": "MIT",
+  "dependencies": {
+    "@minui/wxc-badge": "^1.0.2",
+    "@minui/wxc-cc": "^1.0.1"
+  },
+  "minConfig": {
+    "component": true
+  }
+}
