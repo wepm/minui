@@ -17,7 +17,6 @@
     >
       {{tab.content}}
     </wxc-tab-panel>
-  </view>
 
   </wxc-tab>
 </template>
