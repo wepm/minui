@@ -1,7 +1,7 @@
 <template>
   <view class="icon_list">
 
-    <view wx:for="{{icons}}" wx:for-item="icon" class="icon_item_demo">
+    <view wx:for="{{icons}}" wx:for-item="icon" wx:key="index" class="icon_item_demo">
       <wxc-icon size="50" type="{{icon}}"></wxc-icon>
       <text class="icon_type">{{icon}}</text>
     </view>
