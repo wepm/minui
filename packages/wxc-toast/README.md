@@ -22,6 +22,12 @@ $ min install @minui/wxc-toast
 |`duration`            | [说明]：提示的延迟时间，单位毫秒。<br>类型：`Number`<br>默认值：`2000` <br>  |
 |`bind:success`        | [说明]：调用成功的回调函数。|
 
+### Toast【methods】
+
+| 名称                  | 描述                         |
+|----------------------|------------------------------|
+|`show`                | [说明]：显示toast。<br>[类型]：`Function`<br>[参数]：`void`<br>[返回]：`void`|
+
 ##  ChangeLog
 
 #### v1.0.2（2017.11.02）
