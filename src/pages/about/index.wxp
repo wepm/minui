@@ -38,7 +38,7 @@
 
   <view class="section">
     <wxc-flex class="weapp__list" cross="top" wrap="wrap">
-      <view class="weapp__item" wx:for="{{weApps}}" wx:for-index="index" wx:for-item="app" >
+      <view class="weapp__item" wx:for="{{weApps}}" wx:for-index="index" wx:for-item="app" wx:key="index">
         <image id="{{index}}" class="weapp__qrcode" src="{{app.qrcode}}" mode="aspectFit" bindtap="onImageTap" ></image>
         <text class="weapp__title">{{app.title}}</text>
       </view>
@@ -53,6 +53,16 @@
   <view class="title--h2">○ ChangeLog</view>
 
   <view class="section">
+    <view class="section__changelog">
+      <view class="title--h3">v1.0.7（2017.12.01）</view>
+      <view class="section__p"> - 优化 price组件价格小数点显示问题</view>
+      <view class="section__p"> - 优化 tab支持导出多个入口</view>
+      <view class="section__p"> - 优化 conter组件demo中的属性规范</view>
+      <view class="section__p"> - 优化 loading、toast组件透出实例内部方法</view>
+      <view class="section__p"> - 修复 个别组件样式错乱问题</view>
+      <view class="section__p"> - 重构 首页的导航部分换成 wxc-example-menu 组件</view>
+    </view>
+
     <view class="section__changelog">
       <view class="title--h3">v1.0.6（2017.11.30）</view>
       <view class="section__p"> - 新增几个小程序二维码</view>
