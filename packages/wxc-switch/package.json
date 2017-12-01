@@ -12,9 +12,7 @@
     "access": "public"
   },
   "license": "ISC",
-  "config": {
-    "min": {
-      "component": true
-    }
+  "minConfig": {
+    "component": true
   }
 }
