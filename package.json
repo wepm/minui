@@ -12,7 +12,7 @@
     "@minui/wxc-example": "^1.0.0",
     "@minui/wxc-example-demo": "^1.0.0",
     "@minui/wxc-example-md": "^1.0.0",
-    "@minui/wxc-example-menu": "^1.0.1"
+    "@minui/wxc-example-menu": "^1.0.4"
   },
   "minConfig": {
     "projectType": "component"
