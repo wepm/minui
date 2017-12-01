@@ -1,6 +1,6 @@
 {
   "name": "@minui/wxc-cc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MinUI 小程序组件 - 水平垂直居中",
   "main": "dist/index.js",
   "scripts": {},
@@ -14,7 +14,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@minui/wxc-flex": "^1.0.2"
+    "@minui/wxc-flex": "1.0.3"
   },
   "minConfig": {
     "component": true
