@@ -29,6 +29,11 @@
     <view class="section__p">我们是这里的 F2er~</view>
   </view>
 
+  <view class="title--h2">○ 简历投递</view>
+  <view class="section section__poetry">
+    <view class="section__p">zhaopin@meili-inc.com</view>
+  </view>
+
   <view class="title--h2">○ 小程序展示</view>
 
   <view class="section">
@@ -48,6 +53,12 @@
   <view class="title--h2">○ ChangeLog</view>
 
   <view class="section">
+    <view class="section__changelog">
+      <view class="title--h3">v1.0.6（2017.11.30）</view>
+      <view class="section__p"> - 新增几个小程序二维码</view>
+      <view class="section__p"> - 优化个别组件功能 </view>
+    </view>
+
     <view class="section__changelog">
       <view class="title--h3">v1.0.5（2017.11.20）</view>
       <view class="section__p"> - 新增 wxc-avatar 头像组件</view>
@@ -100,11 +111,23 @@
         },
         {
           'title': '全球爆款折扣商城',
-          'qrcode': 'https://s10.mogucdn.com/mlcdn/c45406/171109_6c460adf5e8d17d7g52i5e1e7386j_1280x1280.jpg'
+          'qrcode': 'https://s10.mogucdn.com/mlcdn/c45406/171130_8blh9b4819cg9li85icg2jgbl6038_344x344.png'
         },
         {
           'title': '蘑菇生活优选',
           'qrcode': 'https://s10.mogucdn.com/mlcdn/c45406/171109_39c1aah1j1hela8i4j9lh34d9gf55_344x344.jpg'
+        },
+        {
+          'title': '大福利',
+          'qrcode': 'https://s11.mogucdn.com/mlcdn/c45406/171117_6438akf0gi8h6idecjai8kiiefchj_344x344.jpg'
+        },
+        {
+          'title': '美丽联合钱包',
+          'qrcode': 'https://s11.mogucdn.com/mlcdn/c45406/171108_53bgfeid8c9jecaahcgfia3f85fkk_1280x1280.jpg'
+        },
+        {
+          'title': '蘑客联盟',
+          'qrcode': 'https://s10.mogucdn.com/mlcdn/c45406/171120_269dc6kh9g67e03dfhkgbjh70d91d_258x258.jpg'
         }
       ]
     },
