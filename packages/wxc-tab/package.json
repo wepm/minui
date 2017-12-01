@@ -12,9 +12,12 @@
   "publishConfig": {
     "access": "public"
   },
-  "config": {
-    "min": {
-      "component": true
-    }
+  "minConfig": {
+    "component": true,
+    "entry": [
+      "src/index",
+      "src/label",
+      "src/panel"
+    ]
   }
 }

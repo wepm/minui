@@ -12,9 +12,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "config": {
-    "min": {
-      "component": true
-    }
+  "minConfig": {
+    "component": true
   }
 }
