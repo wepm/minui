@@ -69,6 +69,4 @@
 
 <style>
   @import 'assets/style/reset.wxss';
-  @import 'assets/style/icon.pcss';
-  @import 'assets/style/transform.wxss';
 </style>

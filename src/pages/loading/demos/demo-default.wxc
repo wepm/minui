@@ -3,7 +3,7 @@
     is-show="{{$loading.isShow}}"
     type="mall"
   ></wxc-loading>
-  <button bindtap="showLoading">show loading</button>
+  <button bindtap="showLoading">设置 type</button>
 </template>
 
 <script>

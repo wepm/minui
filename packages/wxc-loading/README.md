@@ -19,6 +19,13 @@ $ min install @minui/wxc-loading
 |`image`               | [说明]：loading主背景图， 必须与slip同时指定。<br>[类型]：`String`<br>[默认值]：`""` <br>   |
 |`slip`                | [说明]：loading动画背景图，必须与image同时指定。<br>[类型]：`String`<br>[默认值]：`""` <br>     |
 
+### Loading【methods】
+
+| 名称                  | 描述                         |
+|----------------------|------------------------------|
+|`show`                | [说明]：显示loading。<br>[类型]：`Function`<br>[参数]：`void`<br>[返回]：`void`|
+|`hide`                | [说明]：隐藏loading。<br>[类型]：`Function`<br>[参数]：`void`<br>[返回]：`void`|
+
 ##  ChangeLog
 
 #### v1.0.2（2017.11.02）

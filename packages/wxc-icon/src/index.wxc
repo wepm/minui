@@ -30,6 +30,10 @@
 </script>
 
 <style>
+  @font-face {
+    font-family: 'min-icon';
+    src: url('https://s10.mogucdn.com/mlcdn/c45406/170928_1h5992g4hi7giefg93h9ffjfdh98e.ttf') format('truetype');
+  }
   .icon {
     display: inline;
     font-family: "min-icon" !important;

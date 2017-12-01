@@ -1,0 +1,26 @@
+<template>
+    <wxc-toast
+        class="J_toast"
+        text="Hello World"></wxc-toast>
+    <button bindtap="showToast">调用 show() 方法显示</button>
+</template>
+
+<script>
+  export default {
+    config: {
+      usingComponents: {
+        'wxc-toast': '@minui/wxc-toast'
+      }
+    },
+    data: {},
+    methods: {
+      showToast() {
+        let $toast = this.selectComponent(".J_toast")
+        $toast && $toast.show()
+      }
+    }
+  }
+</script>
+
+<style>
+</style>
