@@ -12,9 +12,7 @@
     "access": "public"
   },
   "license": "MIT",
-  "config": {
-    "min": {
-      "component": true
-    }
+  "minConfig": {
+    "component": true
   }
 }

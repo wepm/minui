@@ -9,6 +9,10 @@
       <demo-custom></demo-custom>
     </example-demo>
 
+    <example-demo title="调用方法控制显示" desc="调用 show() 方法显示 loading">
+      <demo-method></demo-method>
+    </example-demo>
+
   </example>
 </template>
 
@@ -21,6 +25,7 @@ export default {
       'example-md': '@minui/wxc-example-md',
       'demo-default': './demos/demo-default',
       'demo-custom': './demos/demo-custom',
+      'demo-method': './demos/demo-method',
     }
   },
   data: {},

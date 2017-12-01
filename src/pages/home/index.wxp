@@ -6,26 +6,7 @@
     </view>
 
     <view class="index-bd">
-      <view class="kind-list">
-        <block wx:for-items="{{menus}}" wx:key="{{item.id}}">
-          <view class="kind-list-item">
-            <view id="{{item.id}}" class="kind-list-item-hd {{item.open ? 'kind-list-item-hd-show' : ''}}" bindtap="kindToggle">
-              <view class="kind-list-text">{{item.name}}</view>
-              <image class="kind-list-img" src="{{item.icon}}"></image>
-            </view>
-            <view class="kind-list-item-bd {{item.open ? 'kind-list-item-bd-show' : ''}}">
-              <view class="navigator-box {{item.open ? 'navigator-box-show' : ''}}">
-                <block wx:for-items="{{item.pages}}" wx:for-item="page" wx:key="*item">
-                  <navigator url="/pages/{{page.id}}/index" class="navigator">
-                    <view class="navigator-text">{{page.id}}</view>
-                    <view class="navigator-arrow"></view>
-                  </navigator>
-                </block>
-              </view>
-            </view>
-          </view>
-        </block>
-      </view>
+      <wxc-example-menu menus="{{menus}}"></wxc-example-menu>
     </view>
 
     <view class="index-ft">
@@ -40,6 +21,11 @@ import config from './config'
 let { menus } = config
 
 export default {
+  config: {
+    usingComponents: {
+      "wxc-example-menu": "@minui/wxc-example-menu"
+    }
+  },
   data: {
     menus
   },
@@ -50,21 +36,6 @@ export default {
       path: '/pages/home/index',
       imageUrl: 'https://s10.mogucdn.com/mlcdn/c45406/171107_501d0i8a0e8437k8065j1fabk4754_690x540.png'
     }
-  },
-  kindToggle: function (e) {
-    const { id } = e.currentTarget
-    const { menus } = this.data
-    for (let index = 0; index < menus.length; index++) {
-      let menu = menus[index]
-      if (menu.id == id) {
-        menu.open = !menu.open
-      } else {
-        menu.open = false
-      }
-    }
-    this.setData({
-      menus
-    })
   }
 }
 </script>

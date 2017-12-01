@@ -14,6 +14,7 @@
             class="tab__navbar-item tab__navbar-item--default"
             wx:for="{{tabs}}"
             wx:for-item="tab"
+            wx:key="index"
             data-key="{{tab.key}}"
             data-idx="{{index}}"
             bindtap="onSwitch"

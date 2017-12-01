@@ -25,6 +25,9 @@
       <demo-icon-color></demo-icon-color>
     </example-demo>
 
+    <example-demo title="调用show方法显示" desc="调用 show() 方法显示 toast">
+      <demo-show></demo-show>
+    </example-demo>
   </example>
 </template>
 
@@ -41,6 +44,7 @@ export default {
       'demo-long-text': './demos/demo-long-text',
       'demo-icon': './demos/demo-icon',
       'demo-icon-color': './demos/demo-icon-color',
+      'demo-show': './demos/demo-show',
       'demo-icon-image': './demos/demo-icon-image'
     }
   },
