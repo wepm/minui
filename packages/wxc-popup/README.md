@@ -23,8 +23,9 @@ $ min install @minui/wxc-popup
 
 | 名称                  | 描述                         |
 |----------------------|------------------------------|
-|`show`         | 【说明】显示Dailog<br>【params】void<br>【return】void        |
-|`hide`			| 【说明】隐藏Dialog<br>【params】void<br>【return】void		|
+|`show`         | 【说明】显示 `popup` <br>【params】void<br>【return】void        |
+|`hide`			| 【说明】隐藏 `popup` <br>【params】void<br>【return】void		|
+|`toggle`       | 【说明】切换 `popup` 的可见状态。<br>【params】`switch`: `Boolean`。可选。<br>【return】void|
 
 ##  ChangeLog
 

@@ -26,6 +26,7 @@ $ min install @minui/wxc-mask
 |----------------------|------------------------------|
 |`show`                | [说明]：显示遮罩层。<br>[类型]：`Function`<br>[参数]：`void`<br>[返回]：`void`|
 |`hide`                | [说明]：隐藏遮罩层。<br>[类型]：`Function`<br>[参数]：`void`<br>[返回]：`void`|
+|`toggle`              | [说明]：切换遮罩层的可见状态。<br>[类型]：`Function`<br>[参数]：`switch`: `Boolean`。可选。<br>[返回]：`void`|
 
 ##  ChangeLog
 
