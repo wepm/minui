@@ -31,7 +31,10 @@
 
     if (dir === 'f') {
       let intNumStr = priceNum.toString().split('.')[0];
-      let decimalNumStr = priceNum.toString().split('.')[1];
+      let decimalNumStr = priceNum.toString().split('.')[1] || '00';
+      if (decimalNumStr.length < 2) {
+          decimalNumStr += '0'
+      }
 
       return intNumStr + '.' + decimalNumStr.substring(0, len);
     } else {
@@ -94,6 +97,11 @@
             this.setData({
               decimalNum: (this.data.value.toString().split('.')[1] || '00').trim()
             });
+            break
+          }
+          default: {
+              value = getDecimal(this.data.value, 2);
+              break;
           }
 
         }

@@ -6,7 +6,7 @@
       <scroll-view
         scroll-x="{{true}}"
         class="tab__navbar"
-        scroll-left="{{move * 2}}"
+        scroll-left="{{(move-width*2.1) / 2}}"
         scroll-with-animation="{{animate}}"
       >
         <view class="tab__navbar-wrap">
@@ -18,13 +18,13 @@
             data-key="{{tab.key}}"
             data-idx="{{index}}"
             bindtap="onSwitch"
-            style="width: {{width}}%; color:{{index === activeKey ? activeTextColor : textColor}}"
+            style="width: {{width}}rpx; color:{{index === activeKey ? activeTextColor : textColor}}"
           >
             <label class="tab__navbar-title">{{tab.label}}</label>
           </view>
 
           <view class="tab__line {{!animate ? '' : 'tab__line--animate'}}"
-            style="left:{{move}}%; width: {{width}}%; background-color: {{activeLineColor}};">
+            style="left:{{move}}rpx; width: {{width}}rpx; background-color: {{activeLineColor}};">
           </view>
 
         </view>
@@ -36,13 +36,13 @@
       <scroll-view
         scroll-x="{{true}}"
         class="tab__navbar"
-        scroll-left="{{move * 2}}"
+        scroll-left="{{(move-width*2.1) / 2}}"
         scroll-with-animation="{{animate}}"
       >
         <view class="tab__navbar-wrap">
           <slot name="tablabel"></slot>
           <view class="tab__line {{!animate ? '' : 'tab__line--animate'}}"
-            style="left:{{move}}%; width: {{width}}%; background-color: {{activeLineColor}};">
+            style="left:{{move}}rpx; width: {{width}}rpx; background-color: {{activeLineColor}};">
           </view>
         </view>
       </scroll-view>
@@ -116,7 +116,9 @@ export default {
     let activeKey = this.minAndMax(this.data.defaultIndex);
     this.onSwitch(activeKey, 'all');
     this.listenSwitch();
-    const width = this.tabs.length < 5 ? (100 / this.tabs.length) : 25;
+//    const width = this.tabs.length < 5 ? (100 / this.tabs.length) : 25;
+    let len = this.tabs.length;
+    const width = parseInt(750 / (len > 5? 5 : len))
     this.type === 'complex' && Event.emit(`label-width-${this.componentId}`, width);
     this.setData({
       tabs: this.tabs,
@@ -199,6 +201,8 @@ export default {
   @e navbar-item {
     text-align: center;
     display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
   }
   @e navbar-item {
     @m default {
