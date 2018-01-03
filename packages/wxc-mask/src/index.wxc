@@ -1,5 +1,5 @@
 <template>
-  <view class="mask mask__status--{{status}}">
+  <view class="mask mask__status--{{status}}" style="z-index: {{zIndex}};">
     <view class="mask__bg" style="background: rgba({{backgroundColor}},{{opacity}});" bindtap="omMaskTap"></view>
     <view class="mask__content mask__content--{{cAlign}}" style="{{__positionStyle}}">
       <slot></slot>
@@ -38,10 +38,15 @@
       status: {
         type: String,
         value: 'hide',
-        observer: function (newStatusValue) {
-          this.setData({
-            status: newStatusValue,
-          });
+        observer: function (status) {
+          if (status === 'show') {
+            let globalData = getApp().globalData
+            let zIndex = (globalData.zIndex || 1000) + 1
+            globalData.zIndex = zIndex
+            this.setData({
+              zIndex: zIndex
+            })
+          }
         }
       },
       opacity: {
@@ -66,17 +71,44 @@
       }
     },
 
-    data: {},
+    data: {
+      zIndex: 1000
+    },
 
     methods: {
+      toggle(mode) {
+        let status = this.data.status
+        if (typeof mode !== 'boolean') {
+          mode = status !== 'show'
+        }
+        if (mode) {
+          this.show()
+        } else {
+          this.hide()
+        }
+      },
+      show() {
+        this.setData({
+          status: 'show'
+        });
+      },
+      hide() {
+        this.setData({
+          status: 'hide'
+        });
+      },
       omMaskTap: function () {
         let data = this.data;
+        let detail = event.detail;
+        let option = {};
 
         if (data.locked && data.locked !== 'true') {
           this.setData({
             status: 'hide'
           });
         }
+
+        this.triggerEvent('masktap', detail, option);
       }
     },
 
@@ -110,6 +142,11 @@
           contentAlignStyle = 'bottom:0; right:0';
           break;
         }
+
+        case 'cc': {
+          contentAlignStyle = 'top: 50%; left: 50%; transform: translate(-50%, -50%);';
+          break;
+        }
       }
 
       this.setData({
@@ -128,7 +165,6 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 100000;
 
     @e bg {
       width: 100%;

@@ -2,7 +2,7 @@
   <view
     wx:if="{{width}}"
     class="tab__label tab__navbar-title"
-    bindtap="onSwitch" style="width:{{width}}%"
+    bindtap="onSwitch" style="width:{{width}}rpx"
   >
     <slot></slot>
   </view>

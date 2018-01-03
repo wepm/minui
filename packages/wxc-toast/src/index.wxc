@@ -1,5 +1,5 @@
 <template>
-  <view class="toast" wx:if="{{isShow}}">
+  <view class="toast" wx:if="{{isShow}}" style="z-index: {{zIndex}};">
     <view class="toast__box">
       <view wx:if="{{icon || iconImage}}" class="toast__icon" style="color: {{iconColor || '#fff'}}">
         <block wx:if="{{icon && !iconImage}}">
@@ -25,7 +25,17 @@ export default {
   properties: {
     isShow: {
       type: Boolean,
-      value: false
+      value: false,
+      observer(isShow) {
+        if (isShow) {
+          let globalData = getApp().globalData
+          let zIndex = (globalData.zIndex || 1000) + 1
+          globalData.zIndex = zIndex
+          this.setData({
+            zIndex: zIndex
+          })
+        }
+      }
     },
     text: {
       type: String,
@@ -48,7 +58,9 @@ export default {
       value: 2000
     }
   },
-  data: {},
+  data: {
+      zIndex: 1000
+  },
   methods: {
     show() {
       let duration = this.data.duration
@@ -86,7 +98,6 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    z-index: 1000;
 
     @e box {
       margin: 0 auto;

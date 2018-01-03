@@ -1,5 +1,5 @@
 <template>
-  <view class="loading" wx:if="{{isShow}}">
+  <view class="loading" wx:if="{{isShow}}" style="z-index: {{zIndex}};">
     <block wx:if="{{image && slip}}">
       <view class="loading__image loading__box" style="background-image: url({{image}})">
         <view class="loading__slip loading__box" style="background-image: url({{slip}})"></view>
@@ -24,7 +24,17 @@ export default {
   properties: {
     isShow: {
       type: Boolean,
-      value: false
+      value: false,
+      observer(isShow) {
+        if (isShow) {
+          let globalData = getApp().globalData
+          let zIndex = (globalData.zIndex || 1000) + 1
+          globalData.zIndex = zIndex
+          this.setData({
+            zIndex: zIndex
+          })
+        }
+      }
     },
     type: {
       type: String,
@@ -39,7 +49,9 @@ export default {
       value: ''
     }
   },
-  data: {},
+  data: {
+      zIndex: 1000
+  },
   methods: {
     show() {
       if (this._timer) {
@@ -80,7 +92,6 @@ export default {
     left: 0;
     align-items: center;
     align-content: center;
-    z-index: 1000;
 
     @e image {
       position: relative;
@@ -91,7 +102,7 @@ export default {
         background-image: url(https://s10.mogucdn.com/mlcdn/c45406/170607_5241335cb37ka3ab7781ddh504ggh_200x200.png);
       }
       @m mall {
-        background-image: url(https://s10.mogucdn.com/mlcdn/c45406/170810_2kca9ccaag9cej65jagf8h554lcl5_200x200.png);
+        background-image: url(https://s10.mogucdn.com/mlcdn/c45406/171023_625g128f20b5k0aace38jgghe737b_200x200.png);
       }
     }
     @e slip {

@@ -1,6 +1,6 @@
 <template>
   <wxc-mask status="{{maskStatus}}"></wxc-mask>
-  <view class="popup popup__status--{{status}} popup__content-align--{{align}} popup__status--{{status}}--animotion-{{animationMode}}" bindtap="hide">
+  <view style="z-index: {{zIndex}};" class="popup popup__status--{{status}} popup__content-align--{{align}} popup__status--{{status}}--animotion-{{animationMode}}" bindtap="hide">
     <slot></slot>
   </view>
 </template>
@@ -24,13 +24,40 @@ export default {
     },
     status: {
       type: String,
-      value: 'hide'
+      value: 'hide',
+      observer(status) {
+        if (status === 'show' || status === 'hide') {
+          this.setData({
+            maskStatus: status
+          })
+        }
+        if (status === 'show') {
+          let globalData = getApp().globalData
+          let zIndex = (globalData.zIndex || 1000) + 1
+          globalData.zIndex = zIndex
+          this.setData({
+            zIndex: zIndex
+          })
+        }
+      }
     }
   },
   data: {
-    maskStatus: 'hide'
+    maskStatus: 'hide',
+    zIndex: 1000
   },
   methods: {
+    toggle(mode) {
+      let status = this.data.status
+      if (typeof mode !== 'boolean') {
+        mode = status !== 'show'
+      }
+      if (mode) {
+          this.show()
+      } else {
+          this.hide()
+      }
+    },
     showMask() {
       this.setData({
         maskStatus: 'show'
@@ -95,7 +122,6 @@ export default {
 <style lang="pcss">
 @b popup {
   position: fixed;
-  z-index: 200000;
   width: 100%;
   height: 100%;
   top: 50%;
