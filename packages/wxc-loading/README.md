@@ -28,6 +28,10 @@ $ min install @minui/wxc-loading
 
 ##  ChangeLog
 
+#### v1.0.3（2018.01.04）
+
+- 更换小店微商城图标，规范 z-index 层级
+
 #### v1.0.2（2017.11.02）
 
 - update .npmignore

@@ -42,6 +42,10 @@ $ min install @minui/wxc-tab
 
 ##  ChangeLog
 
+#### v1.0.3（2018.01.04）
+
+- 修复点击tab时的定位问题
+
 #### v1.0.2（2017.11.02）
 
 - update .npmignore

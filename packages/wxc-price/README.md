@@ -21,6 +21,10 @@ $ min install @minui/wxc-price
 
 ##  ChangeLog
 
+#### v1.0.3（2018.01.04）
+
+- 修复保留两位小数，一位小数等问题
+
 #### v1.0.2（2017.11.02）
 
 - update .npmignore

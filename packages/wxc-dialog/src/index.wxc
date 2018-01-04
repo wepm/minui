@@ -1,5 +1,5 @@
 <template>
-  <wxc-popup animation-mode="none" align="center" class="popup">
+  <wxc-popup animation-mode="none" align="center" locked="true" class="popup">
     <view class="dialog" catchtap="onContentTap">
       <view class="dialog__title" wx:if="{{title}}" style="color: {{titleColor}}">{{title}}</view>
       <view class="dialog__content">

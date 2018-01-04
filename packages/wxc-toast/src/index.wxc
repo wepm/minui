@@ -1,9 +1,9 @@
 <template>
   <view class="toast" wx:if="{{isShow}}" style="z-index: {{zIndex}};">
     <view class="toast__box">
-      <view wx:if="{{icon || iconImage}}" class="toast__icon" style="color: {{iconColor || '#fff'}}">
+      <view wx:if="{{icon || iconImage}}" class="toast__icon">
         <block wx:if="{{icon && !iconImage}}">
-          <wxc-icon type="{{icon}}" size="68"></wxc-icon>
+          <wxc-icon type="{{icon}}" color="{{iconColor || '#fff'}}" size="68"></wxc-icon>
         </block>
         <image wx:if="{{iconImage}}" class="toast__icon--image" src="{{iconImage}}" mode="widthFix"></image>
       </view>
