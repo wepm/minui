@@ -30,6 +30,10 @@ $ min install @minui/wxc-mask
 
 ##  ChangeLog
 
+#### v1.0.3（2018.01.04）
+
+- 增加show,hide,toggle方法，增加自定义事件，规范z-index层级
+
 #### v1.0.2（2017.11.02）
 
 - update .npmignore

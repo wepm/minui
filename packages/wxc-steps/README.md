@@ -27,6 +27,10 @@ $ min install @minui/wxc-steps
 
 ##  ChangeLog
 
+#### v1.0.3（2018.01.04）
+
+- 步骤描述样式修改
+
 #### v1.0.2（2017.11.02）
 
 - update .npmignore

@@ -35,6 +35,10 @@ $ min install @minui/wxc-dialog
 
 ##  ChangeLog
 
+#### v1.0.3（2018.01.04）
+
+- 修复点击蒙层即关闭 dialog 的问题
+
 #### v1.0.2（2017.11.02）
 
 - update .npmignore

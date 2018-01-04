@@ -23,6 +23,10 @@ $ min install @minui/wxc-abnor
 
 ##  ChangeLog
 
+#### v1.0.3（2018.01.04）
+
+- 补全配置，避免报错
+
 #### v1.0.2（2017.11.02）
 
 - update .npmignore

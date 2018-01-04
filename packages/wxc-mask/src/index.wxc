@@ -97,7 +97,7 @@
           status: 'hide'
         });
       },
-      omMaskTap: function () {
+      omMaskTap: function (event) {
         let data = this.data;
         let detail = event.detail;
         let option = {};
@@ -106,9 +106,8 @@
           this.setData({
             status: 'hide'
           });
+          this.triggerEvent('masktap', detail, option);
         }
-
-        this.triggerEvent('masktap', detail, option);
       }
     },
 
