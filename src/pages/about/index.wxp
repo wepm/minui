@@ -53,6 +53,18 @@
   <view class="title--h2">○ ChangeLog</view>
 
   <view class="section">
+
+    <view class="section__changelog">
+      <view class="title--h3">v1.0.8（2018.01.04）</view>
+      <view class="section__p"> - tab组件修复点击定位问题</view>
+      <view class="section__p"> - loading更换mall的图标</view>
+      <view class="section__p"> - steps组件修复desc的字体</view>
+      <view class="section__p"> - price组件修复小数问题</view>
+      <view class="section__p"> - z-index层级规范</view>
+      <view class="section__p"> - mask,popup组件增加toggle方法</view>
+      <view class="section__p"> - abnor组件config补全</view>
+    </view>
+
     <view class="section__changelog">
       <view class="title--h3">v1.0.7（2017.12.01）</view>
       <view class="section__p"> - 优化 price组件价格小数点显示问题</view>
