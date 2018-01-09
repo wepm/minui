@@ -16,8 +16,13 @@ $ min install @minui/wxc-icon
 | --- | --- |
 | type | [必填] icon 类型 |
 | size | [可选] icon 字号，默认值 22（单位 rpx） |
+| color| [可选] icon 颜色，默认 #333 |
 
 ##  ChangeLog
+
+#### v1.0.6（2018.01.09）
+
+- update API
 
 #### v1.0.2（2017.11.02）
 

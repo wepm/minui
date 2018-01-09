@@ -30,6 +30,9 @@ $ min install @minui/wxc-toast
 
 ##  ChangeLog
 
+#### v1.0.6（2018.01.09)
+- z-index 层级规范方案修改
+
 #### v1.0.3（2018.01.04）
 
 - 修复自定义 icon 时，icon 的颜色样式问题，规范 z-index 规范

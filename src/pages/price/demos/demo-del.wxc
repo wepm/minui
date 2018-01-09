@@ -1,5 +1,5 @@
 <template>
-  <wxc-price status="del">140.00</wxc-price>
+  <wxc-price status="del" del-color="#666">140.00</wxc-price>
 </template>
 
 <script>

@@ -29,6 +29,9 @@ $ min install @minui/wxc-popup
 
 ##  ChangeLog
 
+#### v1.0.6（2018.01.09)
+- z-index 层级规范方案修改
+
 #### v1.0.3（2018.01.04）
 
 - 增加toggle方法，规范z-index层级

@@ -1,13 +1,13 @@
 <template>
-  <view class="price price__status--{{status}}">
-    <view class="price__icon price__icon--{{icon}}">￥</view>
-    <view class="price__count">
+  <view class="price price__status--{{status}}" style="{{status==='del'? ('color: ' + delColor) : ''}}">
+    <view class="price__icon price__icon--{{icon}} price__icon--{{status}}">￥</view>
+    <view class="count price__count price__count--{{status}}">
       <slot wx:if="{{!value}}"></slot>
 
       {{value && decimal !== 'small' ? value : ''}}
 
       <text wx:if="{{value && decimal === 'small'}}">{{value}}</text>
-      <text wx:if="{{value && decimal === 'small'}}" class="price__count__small-decimal">.{{decimalNum}}</text>
+      <text wx:if="{{value && decimal === 'small'}}" class="count__decimal--small">.{{decimalNum}}</text>
     </view>
   </view>
 </template>
@@ -59,6 +59,10 @@
       status: {
         type: String,
         value: ''
+      },
+      delColor: {
+        type: String,
+        value: '#999'
       },
       decimal: {
         type: String,
@@ -133,14 +137,13 @@
     line-height: 1.1;
   }
 
-  .price__status--del .price__icon,
-  .price__status--del .price__count {
-    color: #999999;
+  .price__icon--del,
+  .price__count--del {
     font-weight: normal;
     text-decoration: line-through;
   }
 
-  .price__count__small-decimal {
+  .count__decimal--small {
     display: inline;
     font-size: 62%;
   }
