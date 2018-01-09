@@ -7,6 +7,12 @@
       ]
     },
     {
+      "id": "symbol",
+      "images": [
+        "https://s3.mogucdn.com/mlcdn/c45406/180109_726jf0eeal3bd344fbdk327d8j7gc_400x300.png"
+      ]
+    },
+    {
       "id": "value",
       "images": [
         "https://s10.mogucdn.com/mlcdn/c45406/171102_0lfgade2a0aj98c31b64i5lbl07i9_400x300.png"

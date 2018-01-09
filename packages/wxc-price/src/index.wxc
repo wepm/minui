@@ -1,6 +1,6 @@
 <template>
   <view class="price price__status--{{status}}" style="{{status==='del'? ('color: ' + delColor) : ''}}">
-    <view class="price__icon price__icon--{{icon}} price__icon--{{status}}">￥</view>
+    <view class="price__icon price__icon--{{icon}} price__icon--{{status}}">{{symbol}}</view>
     <view class="count price__count price__count--{{status}}">
       <slot wx:if="{{!value}}"></slot>
 
@@ -48,6 +48,10 @@
     },
     behaviors: [],
     properties: {
+      symbol: {
+        type: String,
+        value: '￥'
+      },
       value: {
         type: [Number, String],
         value: ''

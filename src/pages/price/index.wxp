@@ -5,6 +5,10 @@
       <demo-default></demo-default>
     </example-demo>
 
+    <example-demo title="设置货币符号" desc="设置为美元">
+      <demo-symbol></demo-symbol>
+    </example-demo>
+
     <example-demo title="value 传值" desc="优先级高于标签内嵌套值">
       <demo-value></demo-value>
     </example-demo>
@@ -45,6 +49,7 @@
         'example-demo': '@minui/wxc-example-demo',
         'example-md': '@minui/wxc-example-md',
         'demo-default': './demos/demo-default',
+        'demo-symbol': './demos/demo-symbol',
         'demo-value': './demos/demo-value',
         'demo-del': './demos/demo-del',
         'demo-sub': './demos/demo-sub',
