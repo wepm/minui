@@ -27,9 +27,12 @@ export default {
       value: false,
       observer(isShow) {
         if (isShow) {
+          if (!getApp().globalData) {
+            Object.assign(getApp(), {globalData: {}})
+          }
           let globalData = getApp().globalData
-          let zIndex = (globalData.zIndex || 1000) + 1
-          globalData.zIndex = zIndex
+          let zIndex = (globalData._zIndex || 1000) + 1
+          globalData._zIndex = zIndex
           this.setData({
             zIndex: zIndex
           })

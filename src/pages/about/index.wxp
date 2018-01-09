@@ -34,6 +34,14 @@
     <view class="section__p">zhaopin@meili-inc.com</view>
   </view>
 
+  <view class="title--h2">○ Min 使用交流群</view>
+  <view class="section wechat">
+    <view class="wechat__content">请添加群助手 wUf18018252882 好友或者扫码加好友，并与群助手对话发送验证码 10088 按照指引进群。</view>
+    <image class="wechat__image" mode="withFix" bindtap="onWechatImage"
+           data-image="{{wechatInfo.image}}"
+           src="{{wechatInfo.image}}"></image>
+  </view>
+
   <view class="title--h2">○ 小程序展示</view>
 
   <view class="section">
@@ -53,6 +61,14 @@
   <view class="title--h2">○ ChangeLog</view>
 
   <view class="section">
+
+    <view class="section__changelog">
+      <view class="title--h3">v1.0.9（2018.01.09）</view>
+      <view class="section__p"> - z-index 层级规范方案修改</view>
+      <view class="section__p"> - price 组件在 del 状态下应该可以设置颜色</view>
+      <view class="section__p"> - price 组件增加货币符号属性</view>
+      <view class="section__p"> - icon 组件 API 完善</view>
+    </view>
 
     <view class="section__changelog">
       <view class="title--h3">v1.0.8（2018.01.04）</view>
@@ -118,6 +134,9 @@
       }
     },
     data: {
+      wechatInfo: {
+        image: 'https://s10.mogucdn.com/mlcdn/c45406/180108_888g0d26e23h9j8fc9e3bd7j3e85h_430x430.jpg_320x999.jpg'
+      },
       weApps: [
         {
           'title': '蘑菇街女装精选',
@@ -158,6 +177,13 @@
         title: '团队介绍 - MinUI小程序组件库',
         path: '/pages/about/index'
       }
+    },
+    onWechatImage(e) {
+      let image = e.currentTarget.dataset.image
+      wx.previewImage({
+        current: image,
+        urls: [image]
+      })
     },
     onImageTap(param) {
       wx.previewImage({
@@ -231,5 +257,16 @@
     font-size: 28rpx;
     text-align: center;
     color: #777777;
+  }
+  .wechat__content {
+    color:#666;
+    font-size:28rpx;
+    line-height:1.6;
+  }
+  .wechat__image {
+    display:block;
+    width: 500rpx;
+    height: 500rpx;
+    margin:0 auto;
   }
 </style>

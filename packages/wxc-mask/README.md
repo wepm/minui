@@ -30,6 +30,9 @@ $ min install @minui/wxc-mask
 
 ##  ChangeLog
 
+#### v1.0.6（2018.01.09)
+- z-index 层级规范方案修改
+
 #### v1.0.3（2018.01.04）
 
 - 增加show,hide,toggle方法，增加自定义事件，规范z-index层级
