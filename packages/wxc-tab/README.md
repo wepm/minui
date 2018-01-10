@@ -40,6 +40,16 @@ $ min install @minui/wxc-tab
 |`tab-index`           | [说明]：激活当前面板的 index。<br>[类型]：`Number`<br>[默认值]：`0`
 |`component-id`        | [说明]：同时调用两个tab时，需要指定component-id。<br>[类型]：`String`<br>
 
+## Link
+||地址|
+|--|---|
+||tab 组件文档 <br> [https://meili.github.io/min/docs/minui/index.html#tab](https://meili.github.io/min/docs/minui/index.html#tab)<br>|
+||tab 组件源码 <br> [https://github.com/meili/minui/tree/master/packages/wxc-tab](https://github.com/meili/minui/tree/master/packages/wxc-tab)<br>|
+||MinUI 组件库 <br> [https://github.com/meili/minui](https://github.com/meili/minui) <br>|
+
+## Preview
+![tab](https://s10.mogucdn.com/mlcdn/c45406/171107_7eaagk5jeh09jj72h677gcd2g6j2c_480x480.jpg_220x330.jpg)
+
 ##  ChangeLog
 
 #### v1.0.3（2018.01.04）

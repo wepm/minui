@@ -28,6 +28,16 @@ $ min install @minui/wxc-toast
 |----------------------|------------------------------|
 |`show`                | [说明]：显示toast。<br>[类型]：`Function`<br>[参数]：`void`<br>[返回]：`void`|
 
+## Link
+||地址|
+|--|---|
+||toast 组件文档 <br> [https://meili.github.io/min/docs/minui/index.html#toast](https://meili.github.io/min/docs/minui/index.html#toast)<br>|
+||toast 组件源码 <br> [https://github.com/meili/minui/tree/master/packages/wxc-toast](https://github.com/meili/minui/tree/master/packages/wxc-toast)<br>|
+||MinUI 组件库 <br> [https://github.com/meili/minui](https://github.com/meili/minui) <br>|
+
+## Preview
+![toast](https://s10.mogucdn.com/mlcdn/c45406/171107_1361j09d04c4426a5gd743i7kk5hg_480x480.jpg_220x330.jpg)
+
 ##  ChangeLog
 
 #### v1.0.6（2018.01.09)

@@ -1,24 +1,12 @@
 # MinUI
 
-基于规范的小程序 UI 组件库，简洁、易用、工具化。
+MinUI 是基于微信小程序自定义组件特性开发而成的一套简洁、易用、高效的组件库，适用场景广，覆盖小程序原生框架，各种小程序组件主流框架等，并且提供了专门的命令行工具，猛戳这里（[Min-Cli 使用文档](https://meili.github.io/min/docs/install/index.html)）详细了解如何使用吧。
 
 ![](https://img.shields.io/badge/Build-Passing-brightgreen.svg) ![](https://img.shields.io/badge/License-MIT-lightgrey.svg) ![](https://img.shields.io/badge/%E5%9F%BA%E7%A1%80%E5%BA%93-1.6.0%2B-brightgreen.svg) ![](https://img.shields.io/badge/Powered%20by-Min-28b1b0.svg)
 
 ![](http://s3.mogucdn.com/mlcdn/c45406/171101_850g622e33552bb75f74ael4k563f_3882x1734.png_1200x999.jpg)
 
 ![](http://s3.mogucdn.com/mlcdn/c45406/171025_00h0heed7c1a5iid87ch299h3l8j4_3882x1734.png_1200x999.jpg)
-
-### ○ 缘起
-
-一切的初衷，都始于我们希望像下面这样，在小程序中优雅的定义和使用组件。
-
-<img width="404" src="https://s10.mogucdn.com/mlcdn/c45406/171101_5jji6el984agkfl47454i2h34ej88_808x425.png" style="display:block;margin:0 auto;" />
-
-于是我们设计了 **[Min](https://github.com/meili/min-cli)**。
-
-Min 是一套面向小程序的开发环境，提供 [Min Cli](https://github.com/meili/min-cli)。目前，我们[开源](https://github.com/meili/min-cli)了它面向小程序自定义组件的部分（后续还会陆续开源其他能力），结合微信开发者工具，对组件的 **开发** 和 **使用**，Min 会让你感到优雅和高效。
-
-而 MinUI，就是基于 Min 平台产出的一套 UI 组件库，同时也是蘑菇街小程序在应用的 UI 组件库。
 
 ### ○ 体验
 
@@ -39,73 +27,45 @@ Min 是一套面向小程序的开发环境，提供 [Min Cli](https://github.co
 
 PS：如想尝试修改源码，终端里先执行 `$ min dev`。这样任何的修改，都会在微信开发者工具中自动刷新显示。
 
-#### 开发&应用
+###○ 文档
 
-如要基于 MinUI 进行二次开发，完善属于您项目的组件化体系，请移步至 [Min 的使用文档](https://github.com/meili/min-cli/blob/master/README.md) —— “组件开发” 环节。
-
-如要在既有小程序项目中，使用 Min 提供的组件安装和更新能力，请移步至 [Min 的使用文档](https://github.com/meili/min-cli/blob/master/README.md) —— “组件应用” 环节。
+- [MinUI 组件库文档](https://meili.github.io/min/docs/minui/index.html)
+- [MinUI 源码地址](https://github.com/meili/minui)
+- [Min-Cli 工具使用文档](https://meili.github.io/min/docs/install/index.html)
+- [Min-Cli 源码地址](https://github.com/meili/min-cli)
 
 ### ○ 组件列表
 
-
-```
 - 布局元素
-    - flex
-    - card（coming...）
-    - list（coming...）
+    - [布局 flex](https://meili.github.io/min/docs/minui/index.html#flex)
+    - [水平垂直居中 cc](https://meili.github.io/min/docs/minui/index.html#cc)
 - 基础元件
-    - badge
-    - elip
-    - icon
-    - label
-    - loadmore
-    - price
-    - progress
+    - [头像 avatar](https://meili.github.io/min/docs/minui/index.html#avatar)
+    - [徽章 badge](https://meili.github.io/min/docs/minui/index.html#badge)
+    - [文本截断 elip](https://meili.github.io/min/docs/minui/index.html#elip)
+    - [图标 icon](https://meili.github.io/min/docs/minui/index.html#icon)
+    - [标签 label](https://meili.github.io/min/docs/minui/index.html#label)
+    - [页底提示 loadmore](https://meili.github.io/min/docs/minui/index.html#loadmore)
+    - [价格price](https://meili.github.io/min/docs/minui/index.html#price)
+    - [进度条 progress](https://meili.github.io/min/docs/minui/index.html#progress)
 - 功能组件
-    - abnor
-    - countdown
-    - couner
-    - loading
-    - mask
-    - steps
-    - tab
+    - [异常流展示 abnor](https://meili.github.io/min/docs/minui/index.html#abnor)
+    - [倒计时 countdown](https://meili.github.io/min/docs/minui/index.html#countdown)
+    - [数字框 couner](https://meili.github.io/min/docs/minui/index.html#counter)
+    - [加载提示 loading](https://meili.github.io/min/docs/minui/index.html#loading)
+    - [遮罩层 mask](https://meili.github.io/min/docs/minui/index.html#mask)
+    - [ 步骤条 steps](https://meili.github.io/min/docs/minui/index.html#steps)
+    - [选项卡 tab](https://meili.github.io/min/docs/minui/index.html#tab)
 - 提示反馈
-    - dialog
-    - popup
-    - toast
-- 表单增强（coming...）
-```
-### ○ 项目结构
+    - [对话框 dialog](https://meili.github.io/min/docs/minui/index.html#dialog)
+    - [弹出层 popup](https://meili.github.io/min/docs/minui/index.html#popup)
+    - [提示框 toast](https://meili.github.io/min/docs/minui/index.html#toast)
 
-```
-- MinUI/
-    - dist // 打包目录，在微信开发者工具中添加这个目录来运行项目
-    - packages // 组件目录
-        - loading
-            - src
-                - index.wxc // 组件单文件
-            - .npmignore
-            - package.json
-            - README.md
-            - LICENSE
-        - ...
-    - src // 页面源码
-        - common
-        - pages // 组件 demo 页面
-            - loading
-                - demos // demo 汇总，在 index.wxp 中引入和显示
-                - config.json
-                - index.wxp
-            - ...
-    - .editorconfig
-    - .gitignore
-    - LICENSE
-    - min.config.json
-    - package.json
-    - README.md
-```
+###○ 反馈沟通
 
-更多项目结构介绍，可参考工具化 Min Cli 提供的[工程说明](https://github.com/meili/min-cli)。
+请添加群助手 wUf18018252882 好友或者扫码加好友，并与群助手对话发送验证码 10088 按照指引进群。
+
+![群二维码](https://s10.mogucdn.com/mlcdn/c45406/180108_888g0d26e23h9j8fc9e3bd7j3e85h_430x430.jpg_320x999.jpg)
 
 ### ○ 开源协议
 
@@ -114,14 +74,54 @@ PS：如想尝试修改源码，终端里先执行 `$ min dev`。这样任何的
 
 ### ○ 更新记录
 
-#### v1.0.2（2017.11.16）
+####v1.0.9（2018.01.09）
+
+- z-index 层级规范方案修改
+- price 组件在 del 状态下应该可以设置颜色
+- price 组件增加货币符号属性
+- icon 组件 API 完善
+
+####v1.0.8（2018.01.04）
+
+- tab组件修复点击定位问题
+- loading更换mall的图标
+- steps组件修复desc的字体
+- price组件修复小数问题
+- z-index层级规范
+- mask,popup组件增加toggle方法
+- abnor组件config补全
+
+####v1.0.7（2017.12.01）
+
+- 优化 price组件价格小数点显示问题
+- 优化 tab支持导出多个入口
+- 优化 conter组件demo中的属性规范
+- 优化 loading、toast组件透出实例内部方法
+- 修复 个别组件样式错乱问题
+- 重构 首页的导航部分换成 wxc-example-menu 组件
+
+####v1.0.6（2017.11.30）
+
+- 新增几个小程序二维码
+- 优化个别组件功能 
+
+####v1.0.5（2017.11.20）
 
 - 新增 wxc-avatar 头像组件
+- 新增 ChnageLog
 
-#### v1.0.1（2017.11.15）
+####v1.0.4（2017.11.15）
 
 - 新增 wxc-cc 水平垂直居中组件
 
-#### v1.0.0（2017.10.24）
+####v1.0.3（2017.11.09）
+
+- 新增 about 页面
+
+####v1.0.2（2017.11.04）
+
+- 新增工具化页面
+
+####v1.0.0（2017.10.24）
 
 - 初始版本
