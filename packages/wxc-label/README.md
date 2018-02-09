@@ -27,7 +27,7 @@ $ min install @minui/wxc-label
 ||MinUI 组件库 <br> [https://github.com/meili/minui](https://github.com/meili/minui) <br>|
 
 ## Preview
-![label](https://s10.mogucdn.com/mlcdn/c45406/171107_1ik5352h7834dh63l5fj23e3i8ldd_480x480.jpg_220x330.jpg)
+![label](https://s10.mogucdn.com/mlcdn/c45406/171107_1ik5352h7834dh63l5fj23e3i8ldd_480x480.jpg_225x999.jpg)
 
 ##  ChangeLog
 

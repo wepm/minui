@@ -24,7 +24,7 @@ $ min install @minui/wxc-elip
 ||MinUI 组件库 <br> [https://github.com/meili/minui](https://github.com/meili/minui) <br>|
 
 ## Preview
-![elip](https://s10.mogucdn.com/mlcdn/c45406/171107_4j58g41335a4igeih07a4dedl34fi_480x480.jpg_220x330.jpg)
+![elip](https://s10.mogucdn.com/mlcdn/c45406/171107_4j58g41335a4igeih07a4dedl34fi_480x480.jpg_225x999.jpg)
 
 ##  ChangeLog
 

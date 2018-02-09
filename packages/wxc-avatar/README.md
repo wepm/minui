@@ -27,7 +27,7 @@ $ min install @minui/wxc-avatar
 ||MinUI 组件库 <br> [https://github.com/meili/minui](https://github.com/meili/minui) <br>|
 
 ## Preview
-![avatar](https://s10.mogucdn.com/mlcdn/c45406/171117_3liaj03cde4jh50e06d1jcc73795i_480x480.jpg_220x330.jpg)
+![avatar](https://s10.mogucdn.com/mlcdn/c45406/171117_3liaj03cde4jh50e06d1jcc73795i_480x480.jpg_225x999.jpg)
 
 ## ChangeLog
 

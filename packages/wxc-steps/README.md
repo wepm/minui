@@ -33,7 +33,7 @@ $ min install @minui/wxc-steps
 ||MinUI 组件库 <br> [https://github.com/meili/minui](https://github.com/meili/minui) <br>|
 
 ## Preview
-![steps](https://s10.mogucdn.com/mlcdn/c45406/171107_1cf7e9kbg5bi3l0ahj4ghb627jeb1_480x480.jpg_220x330.jpg)
+![steps](https://s10.mogucdn.com/mlcdn/c45406/171107_1cf7e9kbg5bi3l0ahj4ghb627jeb1_480x480.jpg_225x999.jpg)
 
 ##  ChangeLog
 

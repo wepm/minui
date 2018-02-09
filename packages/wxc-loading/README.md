@@ -34,7 +34,7 @@ $ min install @minui/wxc-loading
 ||MinUI 组件库 <br> [https://github.com/meili/minui](https://github.com/meili/minui) <br>|
 
 ## Preview
-![loading](https://s10.mogucdn.com/mlcdn/c45406/171107_6b352846ldeeacf3akjf7jh0189ji_480x480.jpg_220x330.jpg)
+![loading](https://s10.mogucdn.com/mlcdn/c45406/171107_6b352846ldeeacf3akjf7jh0189ji_480x480.jpg_225x999.jpg)
 
 ##  ChangeLog
 

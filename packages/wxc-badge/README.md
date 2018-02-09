@@ -26,7 +26,7 @@ $ min install @minui/wxc-badge
 ||MinUI 组件库 <br> [https://github.com/meili/minui](https://github.com/meili/minui) <br>|
 
 ## Preview
-![badge](https://s10.mogucdn.com/mlcdn/c45406/171107_25lc3e196cf6bg7d05e42h790e73g_480x480.jpg_220x330.jpg)
+![badge](https://s10.mogucdn.com/mlcdn/c45406/171107_25lc3e196cf6bg7d05e42h790e73g_480x480.jpg_225x999.jpg)
 
 ##  ChangeLog
 

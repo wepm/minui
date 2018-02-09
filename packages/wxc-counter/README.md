@@ -28,7 +28,7 @@ $ min install @minui/wxc-counter
 ||MinUI 组件库 <br> [https://github.com/meili/minui](https://github.com/meili/minui) <br>|
 
 ## Preview
-![counter](https://s10.mogucdn.com/mlcdn/c45406/171107_8f74132b6gi7gb1kaej6icddf7e88_480x480.jpg_220x330.jpg)
+![counter](https://s10.mogucdn.com/mlcdn/c45406/171107_8f74132b6gi7gb1kaej6icddf7e88_480x480.jpg_225x999.jpg)
 
 ##  ChangeLog
 

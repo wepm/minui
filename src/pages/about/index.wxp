@@ -61,6 +61,11 @@
   <view class="title--h2">○ ChangeLog</view>
 
   <view class="section">
+    <view class="section__changelog">
+      <view class="title--h3">v1.0.10（2018.02.09）</view>
+      <view class="section__p"> - toast 组件 icon-image 属性更改为 src，1.0.7 及以上版本的 min 支持本地图片路径</view>
+      <view class="section__p"> - tab 组件增加属性 full-screen，tab 组件可撑满全屏</view>
+    </view>
 
     <view class="section__changelog">
       <view class="title--h3">v1.0.9（2018.01.09）</view>

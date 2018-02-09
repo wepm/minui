@@ -22,6 +22,7 @@ $ min install @minui/wxc-tab
 |`active-text-color`         | [说明]：选中文字颜色。<br>[类型]：`String`<br>[默认值]：`#ff5777`
 |`line-color`                | [说明]：线条颜色。<br>[类型]：`String`<br>[默认值]：`#ddd`
 |`active-line-color`         | [说明]：选中线条颜色。<br>[类型]：`String`<br>[默认值]：`#ff5777`
+|`full-screen`               | [说明]：tab 组件全屏设置。<br>[类型]：`Boolean`<br>[默认值]：`false`
 
 ### Tab-Panel【props】
 
@@ -48,7 +49,7 @@ $ min install @minui/wxc-tab
 ||MinUI 组件库 <br> [https://github.com/meili/minui](https://github.com/meili/minui) <br>|
 
 ## Preview
-![tab](https://s10.mogucdn.com/mlcdn/c45406/171107_7eaagk5jeh09jj72h677gcd2g6j2c_480x480.jpg_220x330.jpg)
+![tab](https://s10.mogucdn.com/mlcdn/c45406/171107_7eaagk5jeh09jj72h677gcd2g6j2c_480x480.jpg_225x999.jpg)
 
 ##  ChangeLog
 

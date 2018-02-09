@@ -29,7 +29,7 @@ $ min install @minui/wxc-price
 ||MinUI 组件库 <br> [https://github.com/meili/minui](https://github.com/meili/minui) <br>|
 
 ## Preview
-![price](https://s10.mogucdn.com/mlcdn/c45406/171107_2ihj6754hg63gahdhljb2c1hcdeg9_480x480.jpg_220x330.jpg)
+![price](https://s10.mogucdn.com/mlcdn/c45406/171107_2ihj6754hg63gahdhljb2c1hcdeg9_480x480.jpg_225x999.jpg)
 
 ##  ChangeLog
 

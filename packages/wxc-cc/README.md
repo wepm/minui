@@ -22,7 +22,7 @@ none
 ||MinUI 组件库 <br> [https://github.com/meili/minui](https://github.com/meili/minui) <br>|
 
 ## Preview
-![cc](https://s10.mogucdn.com/mlcdn/c45406/171115_2b7djgj18g4gifdkljf60b70kd75k_480x480.jpg_220x330.jpg)
+![cc](https://s10.mogucdn.com/mlcdn/c45406/171115_2b7djgj18g4gifdkljf60b70kd75k_480x480.jpg_225x999.jpg)
 
 ## ChangeLog
 

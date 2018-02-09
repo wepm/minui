@@ -36,7 +36,7 @@ $ min install @minui/wxc-mask
 ||MinUI 组件库 <br> [https://github.com/meili/minui](https://github.com/meili/minui) <br>|
 
 ## Preview
-![mask](https://s10.mogucdn.com/mlcdn/c45406/171107_27jgk40354eflg8e35c7fhl4ec35f_480x480.jpg_220x330.jpg)
+![mask](https://s10.mogucdn.com/mlcdn/c45406/171107_27jgk40354eflg8e35c7fhl4ec35f_480x480.jpg_225x999.jpg)
 
 ##  ChangeLog
 

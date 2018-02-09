@@ -26,7 +26,7 @@ $ min install @minui/wxc-loadmore
 ||MinUI 组件库 <br> [https://github.com/meili/minui](https://github.com/meili/minui) <br>|
 
 ## Preview
-![loadmore](https://s10.mogucdn.com/mlcdn/c45406/171107_71417l8a3gj27i2gb97f05j4j1bb7_480x480.jpg_220x330.jpg)
+![loadmore](https://s10.mogucdn.com/mlcdn/c45406/171107_71417l8a3gj27i2gb97f05j4j1bb7_480x480.jpg_225x999.jpg)
 
 ##  ChangeLog
 

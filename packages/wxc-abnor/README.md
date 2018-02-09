@@ -29,7 +29,7 @@ $ min install @minui/wxc-abnor
 ||MinUI 组件库 <br> [https://github.com/meili/minui](https://github.com/meili/minui) <br>|
 
 ## Preview
-![abnor](https://s10.mogucdn.com/mlcdn/c45406/171107_3ddh6idjk6f6i6h67j013594k8910_480x480.jpg_220x330.jpg)
+![abnor](https://s10.mogucdn.com/mlcdn/c45406/171107_3ddh6idjk6f6i6h67j013594k8910_480x480.jpg_225x999.jpg)
 
 ##  ChangeLog
 

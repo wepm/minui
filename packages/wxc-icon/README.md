@@ -26,7 +26,7 @@ $ min install @minui/wxc-icon
 ||MinUI 组件库 <br> [https://github.com/meili/minui](https://github.com/meili/minui) <br>|
 
 ## Preview
-![icon](https://s10.mogucdn.com/mlcdn/c45406/171107_1ab45l563alfj6jkeeij1jf0k06h0_480x480.jpg_220x330.jpg)
+![icon](https://s10.mogucdn.com/mlcdn/c45406/171107_1ab45l563alfj6jkeeij1jf0k06h0_480x480.jpg_225x999.jpg)
 
 ##  ChangeLog
 

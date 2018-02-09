@@ -27,7 +27,7 @@ $ min install @minui/wxc-flex
 ||MinUI 组件库 <br> [https://github.com/meili/minui](https://github.com/meili/minui) <br>|
 
 ## Preview
-![flex](https://s10.mogucdn.com/mlcdn/c45406/171107_644d29k85d23lgafie50h51ci8gg1_480x480.jpg_220x330.jpg)
+![flex](https://s10.mogucdn.com/mlcdn/c45406/171107_644d29k85d23lgafie50h51ci8gg1_480x480.jpg_225x999.jpg)
 
 ##  ChangeLog
 

@@ -30,7 +30,7 @@ $ min install @minui/wxc-countdown
 ||MinUI 组件库 <br> [https://github.com/meili/minui](https://github.com/meili/minui) <br>|
 
 ## Preview
-![countdown](https://s10.mogucdn.com/mlcdn/c45406/171107_34c43132g11j166hficgei36665aa_480x480.jpg_220x330.jpg)
+![countdown](https://s10.mogucdn.com/mlcdn/c45406/171107_34c43132g11j166hficgei36665aa_480x480.jpg_225x999.jpg)
 
 ##  ChangeLog
 
