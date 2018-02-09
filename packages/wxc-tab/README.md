@@ -53,6 +53,9 @@ $ min install @minui/wxc-tab
 
 ##  ChangeLog
 
+#### v1.0.4（2018.02.09）
+- 新增 full-screen 属性
+
 #### v1.0.3（2018.01.04）
 
 - 修复点击tab时的定位问题
