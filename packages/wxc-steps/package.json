@@ -1,6 +1,6 @@
 {
   "name": "@minui/wxc-steps",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "MinUI 小程序组件 - 步骤条",
   "main": "dist/index.js",
   "repository": {
