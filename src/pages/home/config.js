@@ -97,6 +97,20 @@ module.exports = {
       ]
     },
     {
+      id: 'form',
+      name: '表单组件',
+      open: false,
+      icon: 'https://s10.mogucdn.com/mlcdn/c45406/171016_5ef72ihcc0bb6g2bhi8036gc2c060_68x68.png',
+      pages: [
+        {
+          "id": "button",
+          "name": "按钮",
+          "icon": "",
+          "code": ""
+        }
+      ]
+    },
+    {
       id: 'page',
       name: '功能组件',
       open: false,
