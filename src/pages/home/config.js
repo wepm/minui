@@ -107,6 +107,12 @@ module.exports = {
           "name": "按钮",
           "icon": "",
           "code": ""
+        },
+        {
+          "id": "input",
+          "name": "输入框",
+          "icon": "",
+          "code": ""
         }
       ]
     },
