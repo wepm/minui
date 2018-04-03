@@ -113,6 +113,12 @@ module.exports = {
           "name": "输入框",
           "icon": "",
           "code": ""
+        },
+        {
+          "id": "list",
+          "name": "列表",
+          "icon": "",
+          "code": ""
         }
       ]
     },

@@ -67,6 +67,7 @@
       <view class="section__p"> - toast 组件 show() 方法增加 message 参数</view>
       <view class="section__p"> - 新增 button 组件</view>
       <view class="section__p"> - 新增 input 组件</view>
+      <view class="section__p"> - 新增 list 组件</view>
     </view>
 
     <view class="section__changelog">
