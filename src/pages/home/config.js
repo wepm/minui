@@ -129,6 +129,12 @@ module.exports = {
       icon: 'https://s10.mogucdn.com/mlcdn/c45406/171016_4i2hdb0798de3h5l50i3ag3je5ij2_68x68.png',
       pages: [
         {
+          "id": "notice",
+          "name": "通告栏",
+          "icon": "",
+          "code": ""
+        },
+        {
           "id": "abnor",
           "name": "异常流展示",
           "icon": "",

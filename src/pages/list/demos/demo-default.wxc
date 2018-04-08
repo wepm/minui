@@ -25,11 +25,11 @@
 
     <view class="list-item">
       <view class="list-check">
-        <image class="list-image radius" mode="aspectFill" src="http://s2.mogucdn.com/new1/v1/bdefaultavatar/04.jpg_200x999.jpg"></image>
+        <image class="list-image radius" mode="aspectFill" src="http://s2.mogucdn.com/new1/v1/bdefaultavatar/04.jpg"></image>
         <wxc-list class="item" title="标题文字" detail="内容描述"></wxc-list>
       </view>
       <view class="list-check">
-        <image class="list-image" mode="aspectFill" src="http://s3.mogucdn.com/mlcdn/1689c6/180330_8gak8gf7809jhfi8i0l90i79bca3g_400x400.jpg_200x999.jpg"></image>
+        <image class="list-image" mode="aspectFill" src="http://s3.mogucdn.com/mlcdn/1689c6/180330_8gak8gf7809jhfi8i0l90i79bca3g_400x400.jpg"></image>
 
         <wxc-list class="item" title="标题文字" detail="内容描述" mode="none"></wxc-list>
       </view>
