@@ -60,7 +60,7 @@ export default {
   },
   data: { },
   methods: {
-    onDismissNotice() {
+    onDismissNotice(event) {
       this.setData({
         isShow: false
       });

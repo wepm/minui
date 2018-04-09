@@ -69,6 +69,7 @@
       <view class="section__p"> - 新增 input 组件</view>
       <view class="section__p"> - 新增 list 组件</view>
       <view class="section__p"> - 新增 notice 组件</view>
+      <view class="section__p"> - 新增 panel 组件</view>
     </view>
 
     <view class="section__changelog">

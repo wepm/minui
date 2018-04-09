@@ -33,6 +33,12 @@ module.exports = {
           "code": "https://s10.mogucdn.com/mlcdn/c45406/171107_644d29k85d23lgafie50h51ci8gg1_480x480.jpg"
         },
         {
+          "id": "panel",
+          "name": "面板",
+          "icon": "",
+          "code": ""
+        },
+        {
           "id": "cc",
           "name": "水平垂直居中",
           "icon": "",
