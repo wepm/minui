@@ -141,6 +141,12 @@ module.exports = {
           "code": ""
         },
         {
+          "id": "search",
+          "name": "搜索栏",
+          "icon": "",
+          "code": ""
+        },
+        {
           "id": "abnor",
           "name": "异常流展示",
           "icon": "",
