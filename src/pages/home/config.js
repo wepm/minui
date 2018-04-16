@@ -125,6 +125,12 @@ module.exports = {
           "name": "列表",
           "icon": "",
           "code": ""
+        },
+        {
+          "id": "select",
+          "name": "选择",
+          "icon": "",
+          "code": ""
         }
       ]
     },
