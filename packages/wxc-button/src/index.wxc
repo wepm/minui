@@ -1,29 +1,31 @@
 <template>
-    <button class="btn btn__size--{{size}} btn__{{type}}--{{plain}}"
-            hover-class="{{hoverClass}}"
-            style="{{btnStyle}}"
-            loading="{{loading}}"
-            form-type="{{formType}}"
-            open-type="{{openType}}"
-            app-parameter="{{appParameter}}"
-            hover-stop-propagation="{{hoverStopPropagation}}"
-            hover-start-time="{{hoverStartTime}}"
-            hover-stay-time="{{hoverStayTime}}"
-            lang="{{lang}}"
-            session-from="{{sessionFrom}}"
-            send-message-title="{{sendMessageTitle}}"
-            send-message-path="{{sendMessagePath}}"
-            send-message-img="{{sendMessageImg}}"
-            show-message-card="{{showMessageCard}}"
-            bindtap="btnClick"
-            bindgetuserinfo="getUserInfo"
-            bindcontact="onContact"
-            bindgetphonenumber="getPhoneNumber"
-            binderrror="onError"
-            >
-        {{value}}
-        <slot wx:if="{{!value}}"></slot>
-    </button>
+    <form report-submit="{{true}}" bindsubmit="onSubmit">
+        <button class="btn btn__size--{{size}} btn__{{type}}--{{plain}}"
+                hover-class="{{hoverClass}}"
+                style="{{btnStyle}}"
+                loading="{{loading}}"
+                form-type="submit"
+                open-type="{{openType}}"
+                app-parameter="{{appParameter}}"
+                hover-stop-propagation="{{hoverStopPropagation}}"
+                hover-start-time="{{hoverStartTime}}"
+                hover-stay-time="{{hoverStayTime}}"
+                lang="{{lang}}"
+                session-from="{{sessionFrom}}"
+                send-message-title="{{sendMessageTitle}}"
+                send-message-path="{{sendMessagePath}}"
+                send-message-img="{{sendMessageImg}}"
+                show-message-card="{{showMessageCard}}"
+                bindtap="btnClick"
+                bindgetuserinfo="getUserInfo"
+                bindcontact="onContact"
+                bindgetphonenumber="getPhoneNumber"
+                binderrror="onError"
+        >
+            {{value}}
+            <slot wx:if="{{!value}}"></slot>
+            </button>
+    </form>
 </template>
 
 <script>
@@ -58,10 +60,6 @@
                 value: false // 名称前是否带 loading 图标
             },
             btnStyle: {
-                type: String,
-                value: ""
-            },
-            formType: {
                 type: String,
                 value: ""
             },
@@ -113,6 +111,11 @@
         },
         data: {},
         methods: {
+            onSubmit(event) {
+                let detail = event.detail;
+                let option = {};
+                this.triggerEvent('submit', detail, option);
+            },
             btnClick(event) {
                 let detail = event.detail;
                 let option = {};

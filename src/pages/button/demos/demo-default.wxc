@@ -45,6 +45,12 @@
       <wxc-button type="beauty" btnStyle="width: 312rpx;">立即换购</wxc-button>
     </view>
   </view>
+  <view class="container">
+    <view class="title">表单</view>
+    <view class="button-small-wrap">
+      <wxc-button bindsubmit="onSubmit" type="beauty" btnStyle="width: 312rpx;">按钮</wxc-button>
+    </view>
+  </view>
 </template>
 
 <script>
@@ -63,7 +69,11 @@ export default {
     ],
     style: 'width: 222rpx;background: #ff9300;border-radius: 66rpx;color: #fff;'
   },
-  methods: { }
+  methods: {
+      onSubmit(e) {
+          console.log(e.detail.formId)
+      }
+  }
 }
 </script>
 

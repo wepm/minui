@@ -22,7 +22,6 @@ $ min install @minui/wxc-button
 |`loading`             | [说明]：按钮文本前是否带 `loading` 图标<br>[类型]：`Boolean`<br>[默认值]：`false`<br>|
 |`btn-style`           | [说明]：按钮的自定义样式<br>[类型]：`String`<br>[默认值]：`""`<br>|
 |`hover-class`         | [说明]：指定按钮按下去的样式类，当 `hover-class="none"` 时，没有点击态效果<br>[类型]：`String`<br>[默认值]：`btn__hover`<br>[可选值]：`btn__hover, none`<br>|
-|`form-type`           | [说明]：同微信小程序 `button` 组件。用于 `<form/>` 组件，点击分别会触发 `<form/>` 组件的 `submit/reset` 事件。<br>[类型]：`String`<br>[默认值]：`""`<br>[可选值]：`submit, reset`<br>|
 |`open-type`           | [说明]：同微信小程序 `button` 组件。微信开放能力<br>[类型]：`String`<br>[默认值]：`""`<br>[可选值]：`contact, share, getUserInfo, getPhoneNumber, launchApp`<br>|
 |`app-parameter`       | [说明]：同微信小程序 `button` 组件。打开 `APP` 时，向 `APP` 传递的参数<br>[类型]：`String`<br>[默认值]：`""`<br>|
 |`hover-stop-propagation`| [说明]：同微信小程序 `button` 组件。指定是否阻止本节点的祖先节点出现点击态<br>[类型]：`Boolean`<br>[默认值]：`false`<br>|
@@ -39,6 +38,7 @@ $ min install @minui/wxc-button
 |`bindcontact`         | [说明]：同微信小程序 `button` 组件。客服消息回调<br>[类型]：`Handler`<br>|
 |`bindgetphonenumber`  | [说明]：同微信小程序 `button` 组件。获取用户手机号回调<br>[类型]：`Handler`<br>|
 |`binderrror`          | [说明]：同微信小程序 `button` 组件。当使用开放能力时，发生错误的回调调<br>[类型]：`Handler`<br>|
+|`bind:submit`         | [说明]：`button` 组件 `form-type` 设置为 `submit`, 内置 `form` 表单，点击按钮时触发 `submit` 事件，可用于获取 `formId` 等，`event.detail = {value, formId}`|
 			
 
 ## ChangeLog
