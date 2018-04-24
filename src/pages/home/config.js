@@ -153,6 +153,12 @@ module.exports = {
           "code": ""
         },
         {
+          "id": "rate",
+          "name": "评分",
+          "icon": "",
+          "code": ""
+        },
+        {
           "id": "abnor",
           "name": "异常流展示",
           "icon": "",
