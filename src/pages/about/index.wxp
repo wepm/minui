@@ -62,9 +62,7 @@
 
   <view class="section">
     <view class="section__changelog">
-      <view class="title--h3">v1.0.10（2018.03.29）</view>
-      <view class="section__p"> - popup 组件文档补充，增加 locked 属性的说明</view>
-      <view class="section__p"> - toast 组件 show() 方法增加 message 参数</view>
+      <view class="title--h3">v2.0.0（2018.04.27）</view>
       <view class="section__p"> - 新增 button 组件</view>
       <view class="section__p"> - 新增 input 组件</view>
       <view class="section__p"> - 新增 list 组件</view>
@@ -73,6 +71,8 @@
       <view class="section__p"> - 新增 search 组件</view>
       <view class="section__p"> - 新增 select 组件</view>
       <view class="section__p"> - 新增 rate 组件</view>
+      <view class="section__p"> - popup 组件文档补充，增加 locked 属性的说明</view>
+      <view class="section__p"> - toast 组件 show() 方法增加 message 参数</view>
     </view>
 
     <view class="section__changelog">
