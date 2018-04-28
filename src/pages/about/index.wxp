@@ -73,6 +73,7 @@
       <view class="section__p"> - 新增 rate 组件</view>
       <view class="section__p"> - popup 组件文档补充，增加 locked 属性的说明</view>
       <view class="section__p"> - toast 组件 show() 方法增加 message 参数</view>
+      <view class="section__p"> - tab 组件 panel 高度自适应</view>
     </view>
 
     <view class="section__changelog">
