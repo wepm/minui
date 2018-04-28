@@ -32,6 +32,8 @@ $ min install @minui/wxc-counter
 ![counter](https://s10.mogucdn.com/mlcdn/c45406/171107_8f74132b6gi7gb1kaej6icddf7e88_480x480.jpg_225x999.jpg)
 
 ##  ChangeLog
+#### v1.0.3（2018.04.27）
+- counter 组件新增加减操作符 color 属性
 
 #### v1.0.2（2017.11.02）
 
