@@ -87,6 +87,7 @@ PS：如想尝试修改源码，终端里先执行 `$ min dev`。这样任何的
 - popup 组件文档补充，增加 locked 属性的说明
 - toast 组件 show() 方法增加 message 参数
 - tab 组件 panel 高度自适应
+- counter 组件加减操作符新增 color 属性
 
 #### v1.0.9（2018.01.09）
 

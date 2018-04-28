@@ -74,6 +74,7 @@
       <view class="section__p"> - popup 组件文档补充，增加 locked 属性的说明</view>
       <view class="section__p"> - toast 组件 show() 方法增加 message 参数</view>
       <view class="section__p"> - tab 组件 panel 高度自适应</view>
+      <view class="section__p"> - counter 组件加减操作符新增 color 属性</view>
     </view>
 
     <view class="section__changelog">
