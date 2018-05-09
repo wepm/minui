@@ -1,6 +1,6 @@
 {
   "name": "@minui/wxc-panel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "panel - 小程序组件",
   "main": "dist/index.js",
   "scripts": {},
@@ -10,6 +10,9 @@
   },
   "author": "",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "minConfig": {
     "component": true
   }
