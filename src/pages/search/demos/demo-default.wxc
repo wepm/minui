@@ -1,8 +1,8 @@
 <template>
   <view class="search-wrap">
-    <view class="search-location">浙江</view>
+    <wxc-icon class="search-icon" type="location" size="44" color="#2FB290"></wxc-icon>
+    <view class="search-location">Davis</view>
     <wxc-search class="search" radius="30" mode="static" placeholder="iphoneX"></wxc-search>
-    <wxc-icon class="search-icon" type="message" size="44" color="#fff"></wxc-icon>
   </view>
 
 </template>
@@ -27,8 +27,6 @@ export default {
     width: 100%;
     height: 90rpx;
     color: #fff;
-    background: #fb4747;
-    border-bottom: 1px solid #fb4747;
   }
   .search-location {
     height: 90rpx;
@@ -36,6 +34,7 @@ export default {
     margin-left: 22rpx;
     font-size: 26rpx;
     overflow: hidden;
+    color: #4A4A4A;
   }
   .search {
     flex-grow: 1;
@@ -45,6 +44,5 @@ export default {
     width: 44rpx;
     height: 90rpx;
     line-height: 90rpx;
-    margin-right: 22rpx;
   }
 </style>
