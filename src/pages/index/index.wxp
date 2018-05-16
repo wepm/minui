@@ -1,0 +1,51 @@
+<template>
+  <block>
+    <!-- search box -->
+    <wxc-flex class="wrap" main="center" cross="center">
+      <search-index></search-index>
+    </wxc-flex>
+    <!-- banner -->
+    <swiper indicator-dots="true"
+      autoplay="true" interval="5000" duration="1000">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="banner"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <!-- category -->
+    <category-index></category-index>
+    <filter-index></filter-index>
+  </block>
+</template>
+
+<script>
+export default {
+  config: {
+    navigationBarTitleText: '小村闲置',
+    usingComponents: {
+      'wxc-flex': '@minui/wxc-flex',
+      'search-index': '../../components/search-index',
+      'category-index': '../../components/category-index',
+      'filter-index': '../../components/filter-index'
+    }
+  },
+  data: {
+    imgUrls: [
+      'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
+      'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
+      'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+    ]
+  }
+}
+</script>
+
+<style>
+page {
+  background: #fff;
+}
+.banner {
+  width: 100%;
+  height: 500rpx;
+}
+</style>

@@ -1,0 +1,52 @@
+<template>
+  <tag item="sdf" clicked="{{true}}" typeI="searchTops"  bind:click='click'/>
+</template>
+
+<script>
+export default {
+  config: {
+    usingComponents: {
+      'tag': './tag'
+    }
+  },
+  data: {
+    tabs: [
+      {title: '全部', content: 'all'},
+      {title: '技能服务', content: 'jnfw'},
+      {title: '房屋出租', content: 'fwcz'},
+      {title: '电子数码', content: 'dzsm'},
+      {title: '书籍教具', content: 'sjjj'},
+      {title: '家具', content: 'jj'},
+      {title: '其他', content: 'qt'},
+    ],
+    activeKey: 0
+  },
+  methods: {
+    onClick: function(e) {
+      console.log(`ComponentId:${e.detail.componentId},you selected:${e.detail.key}`);
+      const idx = e.detail.key;
+      this.setData({
+        activeKey: idx
+      });
+    }
+  }
+}
+</script>
+
+<style lang="pcss">
+@b demo-tab {
+  @e label {
+    width: 100%;
+    margin: 20rpx 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @e text {
+    margin-left: 8rpx;
+  }
+  @m active {
+    color: #ff5777;
+  }
+}
+</style>

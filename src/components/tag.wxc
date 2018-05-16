@@ -1,0 +1,105 @@
+<template>
+  <view class="{{item.post_tag_id==clicked?'tag_itemsac':'tag_items'}}" bindtap='click' data-index='{{item.post_tag_id}}' data-value='{{item.name_of_tag}}' data-type='{{typeI}}'>
+  <text class="itemtitle">{{item.name_of_tag}}</text>
+  <image wx:if="{{deletable}}" class="itemdelete" src="/images/{{item.post_tag_id==clicked?'delete-2':'delete'}}.png" data-index='{{item.post_tag_id}}' catchtap='tag_delete'></image>
+</view>
+</template>
+
+<script>
+export default {
+  config: {
+    usingComponents: {
+      'wxc-tab': '@minui/wxc-tab',
+      'wxc-tab-panel': '@minui/wxc-tab/panel',
+      'wxc-tab-label': '@minui/wxc-tab/label'
+    }
+  },
+  properties: {
+    item:{
+      type:Object
+    },
+    clicked:{
+      type:Number
+    },
+    typeI:{
+      type:String
+    },
+    deletable:{
+      type:Boolean
+    },
+  },
+  data: {
+  },
+  methods: {
+    click: function (e) { 
+      //this.triggerEvent('click',{dataset:e.currentTarget.dataset}); 
+      const that=this;
+      // wx.navigateTo({
+      //   url: '/pages/search?key=' + that.properties.item.name_of_tag,
+      // })
+      wx.showModal({
+        title: 'Test',
+        content: 'Navigate To Search of ' + this.properties.item.name_of_tag,
+      })
+    },
+    tag_delete:function(e){
+      this.triggerEvent('tag_delete', { dataset: e.currentTarget.dataset})
+    }
+  }
+}
+</script>
+
+<style lang="pcss">
+.tag_items{
+  margin-top: 45rpx;
+  align-items: center;
+  border-radius: 30rpx;
+  display: inline-flex;
+  padding: 6rpx 35rpx;
+  box-shadow:0px 3px 15px -3px #aaaaaa;
+  margin-right: 26rpx;
+  white-space:nowrap;
+}
+.tag_itemsac{
+  margin-top: 45rpx;
+  align-items: center;
+  border-radius: 30rpx;
+  display: inline-flex;
+  padding: 6rpx 35rpx;
+  box-shadow:0px 3px 15px -3px #aaaaaa;
+  margin-right: 26rpx;
+  white-space:nowrap;
+  color: #fff;
+  background: #2FB290;
+}
+.tag_items .itemtitle{
+  color: #777;
+  font-size: 36rpx;
+  max-width:270rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+
+}
+.tag_itemsac .itemtitle{
+  font-size: 36rpx;
+  max-width:270rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.tag_items image,.tag_itemsac image{
+  margin-left: 10rpx;
+  width: 46rpx;
+  height: 46rpx;
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+}
+.tag_items .itemdelete,.tag_itemsac .itemdelete{
+  margin-left: 10rpx;
+  width: 32rpx;
+  height: 32rpx;
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+}
+</style>
