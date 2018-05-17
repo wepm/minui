@@ -6,35 +6,35 @@
     animate="{{true}}"
     class="demo-tab"
   >
-  <view slot="tablabel">
-    <wxc-tab-label
+    <view slot="tablabel">
+      <wxc-tab-label
+        wx:for="{{tabs}}"
+        wx:for-item="tab"
+        wx:key="{{tab.title}}"
+        tab-index="{{index}}"
+        component-id="c3"
+      >
+        <view class="demo-tab__label">
+          <icon type="success" size="16"
+            color="{{ activeKey === index ? '#ff5777' : '#555' }}"
+          >
+          </icon>
+          <view class="demo-tab__text {{ activeKey === index ? 'demo-tab--active' : ''}}">
+            {{tab.title}}
+          </view>
+        </view>
+      </wxc-tab-label>
+    </view>
+
+    <!-- <wxc-tab-panel
       wx:for="{{tabs}}"
       wx:for-item="tab"
-      wx:key="{{tab.title}}"
+      wx:key="{{tab.content}}"
       tab-index="{{index}}"
       component-id="c3"
     >
-      <view class="demo-tab__label">
-        <icon type="success" size="16"
-          color="{{ activeKey === index ? '#ff5777' : '#555' }}"
-        >
-        </icon>
-        <view class="demo-tab__text {{ activeKey === index ? 'demo-tab--active' : ''}}">
-          {{tab.title}}
-        </view>
-      </view>
-    </wxc-tab-label>
-  </view>
-
-  <wxc-tab-panel
-    wx:for="{{tabs}}"
-    wx:for-item="tab"
-    wx:key="{{tab.content}}"
-    tab-index="{{index}}"
-    component-id="c3"
-  >
-    {{tab.content}}
-  </wxc-tab-panel>
+      {{tab.content}}
+    </wxc-tab-panel> -->
 
   </wxc-tab>
 </template>
@@ -67,6 +67,9 @@ export default {
       this.setData({
         activeKey: idx
       });
+      this.triggerEvent('categorychange', {
+        category: this.data.tabs[idx].content
+      })
     }
   }
 }

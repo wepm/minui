@@ -1,23 +1,60 @@
 <template>
-  <tag item="sdf" clicked="{{true}}" typeI="searchTops"  bind:click='click'/>
+  <wxc-tab
+    bind:tabchange="onClick"
+    default-index="{{activeKey}}"
+    component-id="filter"
+    animate="{{true}}"
+    class="demo-tab"
+  >
+    <view slot="tablabel">
+      <wxc-tab-label
+        wx:for="{{filters}}"
+        wx:for-item="item"
+        wx:key="{{item.title}}"
+        tab-index="{{index}}"
+        component-id="filter"
+      >
+        <view class="demo-tab__label">
+            <tag item="{{item}}" clicked="{{true}}" typeI="searchTops"  bind:click='click'/>
+        </view>
+      </wxc-tab-label>
+    </view>
+
+  </wxc-tab>
 </template>
 
 <script>
 export default {
   config: {
     usingComponents: {
-      'tag': './tag'
+      'tag': './tag',
+      'wxc-tab': '@minui/wxc-tab',
+      'wxc-tab-panel': '@minui/wxc-tab/panel',
+      'wxc-tab-label': '@minui/wxc-tab/label'
     }
   },
   data: {
-    tabs: [
-      {title: '全部', content: 'all'},
-      {title: '技能服务', content: 'jnfw'},
-      {title: '房屋出租', content: 'fwcz'},
-      {title: '电子数码', content: 'dzsm'},
-      {title: '书籍教具', content: 'sjjj'},
-      {title: '家具', content: 'jj'},
-      {title: '其他', content: 'qt'},
+    filters: [
+      {
+        "post_tag_id": 1,
+        "name_of_tag": "#毕业了"
+      },
+      {
+        "post_tag_id": 2,
+        "name_of_tag": "#开学趴"
+      },
+      {
+        "name_of_tag": "#Picnic Day"
+      },
+      {
+        "name_of_tag": "#毕业后"
+      },
+      {
+        "name_of_tag": "#厨具"
+      },
+      {
+        "name_of_tag": "#Facebook"
+      }
     ],
     activeKey: 0
   },

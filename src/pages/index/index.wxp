@@ -14,7 +14,7 @@
       </block>
     </swiper>
     <!-- category -->
-    <category-index></category-index>
+    <category-index bind:categorychange="categorychange"></category-index>
     <filter-index></filter-index>
   </block>
 </template>
@@ -36,6 +36,12 @@ export default {
       'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
       'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
     ]
+  },
+  categorychange (e) {
+    console.log(e)
+    this.setData({
+      category: e.detail.category
+    })
   }
 }
 </script>
