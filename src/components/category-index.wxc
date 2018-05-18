@@ -98,7 +98,7 @@ export default {
     margin-left: 8rpx;
   }
   @m active {
-    color: #222;
+    color: #2FB290;
   }
 }
 .demo__pic {
