@@ -1,26 +1,7 @@
 <template>
-  <wxc-tab
-    bind:tabchange="onClick"
-    default-index="{{activeKey}}"
-    component-id="filter"
-    animate="{{true}}"
-    class="demo-tab"
-  >
-    <view slot="tablabel">
-      <wxc-tab-label
-        wx:for="{{filters}}"
-        wx:for-item="item"
-        wx:key="{{item.title}}"
-        tab-index="{{index}}"
-        component-id="filter"
-      >
-        <view class="demo-tab__label">
-            <tag item="{{item}}" clicked="{{true}}" typeI="searchTops"  bind:click='click'/>
-        </view>
-      </wxc-tab-label>
-    </view>
-
-  </wxc-tab>
+  <scroll-view scroll-x="true" class="filter-list">
+      <tag item="{{item}}" clicked="{{true}}" typeI="searchTops"  bind:click='click' wx:for="{{filters}}" wx:key="{{index}}"/>
+  </scroll-view>
 </template>
 
 <script>
@@ -30,7 +11,8 @@ export default {
       'tag': './tag',
       'wxc-tab': '@minui/wxc-tab',
       'wxc-tab-panel': '@minui/wxc-tab/panel',
-      'wxc-tab-label': '@minui/wxc-tab/label'
+      'wxc-tab-label': '@minui/wxc-tab/label',
+      'wxc-cc': '@minui/wxc-cc'
     }
   },
   data: {
@@ -71,19 +53,8 @@ export default {
 </script>
 
 <style lang="pcss">
-@b demo-tab {
-  @e label {
-    width: 100%;
-    margin: 20rpx 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .filter-list {
+    white-space: nowrap;
+    margin-top:-40rpx;
   }
-  @e text {
-    margin-left: 8rpx;
-  }
-  @m active {
-    color: #ff5777;
-  }
-}
 </style>

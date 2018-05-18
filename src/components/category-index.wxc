@@ -2,6 +2,9 @@
   <wxc-tab
     bind:tabchange="onClick"
     default-index="{{activeKey}}"
+    line-color="#fff"
+    active-text-color="#222222"
+    active-line-color="#fff"
     component-id="c3"
     animate="{{true}}"
     class="demo-tab"
@@ -15,13 +18,19 @@
         component-id="c3"
       >
         <view class="demo-tab__label">
-          <icon type="success" size="16"
+          <wxc-cc>
+            <view class="demo__wrapper {{ activeKey === index ? 'demo-tab--active' : ''}}">
+              <image class="demo__pic" src="https://s10.mogucdn.com/mlcdn/c45406/171115_7eaee6469k5l0e1728j7aige52e81_352x352.png" mode="aspectFit"></image>
+              <view class="demo__text">{{tab.title}}</view>
+            </view>
+          </wxc-cc>
+          <!-- <icon type="success" size="16"
             color="{{ activeKey === index ? '#ff5777' : '#555' }}"
           >
           </icon>
           <view class="demo-tab__text {{ activeKey === index ? 'demo-tab--active' : ''}}">
             {{tab.title}}
-          </view>
+          </view> -->
         </view>
       </wxc-tab-label>
     </view>
@@ -45,7 +54,8 @@ export default {
     usingComponents: {
       'wxc-tab': '@minui/wxc-tab',
       'wxc-tab-panel': '@minui/wxc-tab/panel',
-      'wxc-tab-label': '@minui/wxc-tab/label'
+      'wxc-tab-label': '@minui/wxc-tab/label',
+      'wxc-cc': '@minui/wxc-cc'
     }
   },
   data: {
@@ -88,7 +98,16 @@ export default {
     margin-left: 8rpx;
   }
   @m active {
-    color: #ff5777;
+    color: #222;
   }
+}
+.demo__pic {
+  width: 80rpx;
+  height: 80rpx;
+  margin: 2rpx;
+}
+.demo__text {
+  text-align: center;
+  font-size: .8em;
 }
 </style>
