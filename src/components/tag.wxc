@@ -1,7 +1,7 @@
 <template>
-  <view class="{{item.post_tag_id==clicked?'tag_itemsac':'tag_items'}}" bindtap='click' data-index='{{item.post_tag_id}}' data-value='{{item.name_of_tag}}' data-type='{{typeI}}'>
+  <view class="{{clicked?'tag_itemsac':'tag_items'}}" bindtap='click' data-index='{{item.post_tag_id}}' data-value='{{item.name_of_tag}}' data-type='{{typeI}}'>
   <text class="itemtitle">{{item.name_of_tag}}</text>
-  <image wx:if="{{deletable}}" class="itemdelete" src="/images/{{item.post_tag_id==clicked?'delete-2':'delete'}}.png" data-index='{{item.post_tag_id}}' catchtap='tag_delete'></image>
+  <image wx:if="{{deletable}}" class="itemdelete" src="/images/{{clicked?'delete-2':'delete'}}.png" data-index='{{item.post_tag_id}}' catchtap='tag_delete'></image>
 </view>
 </template>
 
@@ -19,7 +19,7 @@ export default {
       type:Object
     },
     clicked:{
-      type:Number
+      type:Boolean
     },
     typeI:{
       type:String
@@ -32,15 +32,15 @@ export default {
   },
   methods: {
     click: function (e) { 
-      //this.triggerEvent('click',{dataset:e.currentTarget.dataset}); 
-      const that=this;
+      this.triggerEvent('click',{dataset:e.currentTarget.dataset}); 
+      // const that=this;
       // wx.navigateTo({
       //   url: '/pages/search?key=' + that.properties.item.name_of_tag,
       // })
-      wx.showModal({
-        title: 'Test',
-        content: 'Navigate To Search of ' + this.properties.item.name_of_tag,
-      })
+      // wx.showModal({
+      //   title: 'Test',
+      //   content: 'Navigate To Search of ' + this.properties.item.name_of_tag,
+      // })
     },
     tag_delete:function(e){
       this.triggerEvent('tag_delete', { dataset: e.currentTarget.dataset})

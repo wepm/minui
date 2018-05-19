@@ -1,6 +1,6 @@
 <template>
   <scroll-view scroll-x="true" class="filter-list">
-      <tag item="{{item}}" clicked="{{true}}" typeI="searchTops"  bind:click='click' wx:for="{{filters}}" wx:key="{{index}}"/>
+      <tag item="{{item}}" clicked="{{activeKey === item.name_of_tag}}" typeI="searchTops"  bind:click='onClick' wx:for="{{filters}}" wx:key="{{index}}"/>
   </scroll-view>
 </template>
 
@@ -42,11 +42,14 @@ export default {
   },
   methods: {
     onClick: function(e) {
-      console.log(`ComponentId:${e.detail.componentId},you selected:${e.detail.key}`);
-      const idx = e.detail.key;
+      // console.log(e);
+      const value = e.detail.dataset.value;
       this.setData({
-        activeKey: idx
+        activeKey: value
       });
+      this.triggerEvent('tagClicked', {
+        value
+      })
     }
   }
 }

@@ -15,7 +15,7 @@
     </swiper>
     <!-- category -->
     <category-index bind:categorychange="categorychange"></category-index>
-    <filter-index></filter-index>
+    <filter-index bind:tagClicked="filterChange"></filter-index>
   </block>
 </template>
 
@@ -40,7 +40,14 @@ export default {
   categorychange (e) {
     console.log(e)
     this.setData({
-      category: e.detail.category
+      category: e.detail.category,
+      tagFilter: null
+    })
+  },
+  filterChange (e) {
+    console.log(e)
+    this.setData({
+      tagFilter: e.detail.value
     })
   }
 }
