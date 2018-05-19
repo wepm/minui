@@ -1,0 +1,59 @@
+<template>
+  <wxc-flex class="wrap" cross="top" wrap="wrap">
+    <wxc-producecard wx:for="{{items}}" wx:key="index" info="{{item}}" class="item"></wxc-producecard>
+  </wxc-flex>
+</template>
+
+<script>
+export default {
+  config: {
+    usingComponents: {
+      'wxc-producecard': '@minui/wxc-producecard',
+      'wxc-flex': '@minui/wxc-flex'
+    }
+  },
+  data: {
+    items: [
+      {
+        name: 'Oaksard2 108',
+        avatar: 'https://s10.mogucdn.com/mlcdn/c45406/171115_7eaee6469k5l0e1728j7aige52e81_352x352.png',
+        picture: 'https://s10.mogucdn.com/mlcdn/c45406/171115_7eaee6469k5l0e1728j7aige52e81_352x352.png',
+        price: '30$',
+        view: 110,
+        comments: 0
+      },{
+        name: 'Oaksard3 108',
+        avatar: 'https://s10.mogucdn.com/mlcdn/c45406/171115_7eaee6469k5l0e1728j7aige52e81_352x352.png',
+        picture: 'https://s10.mogucdn.com/mlcdn/c45406/171115_7eaee6469k5l0e1728j7aige52e81_352x352.png',
+        price: '30$',
+        view: 110,
+        comments: 0
+      },{
+        name: 'Oaksard4 108',
+        avatar: 'https://s10.mogucdn.com/mlcdn/c45406/171115_7eaee6469k5l0e1728j7aige52e81_352x352.png',
+        picture: 'https://s10.mogucdn.com/mlcdn/c45406/171115_7eaee6469k5l0e1728j7aige52e81_352x352.png',
+        price: '30$',
+        view: 110,
+        comments: 0
+      }
+    ]
+  },
+  methods: { }
+}
+</script>
+
+<style>
+  wxc-producecard {
+  }
+  .wrap {
+    display: block;
+    padding: 2%;
+    background: #696969;
+  }
+  .item {
+    width: 47%;
+    height: 348rpx;
+    margin: 1.5%;
+    flex-grow: 0;
+  }
+</style>
