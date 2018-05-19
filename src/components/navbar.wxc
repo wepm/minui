@@ -1,0 +1,92 @@
+<template>
+  <block>
+    <wxc-flex main="around" class="nav-bar">
+      <wxc-cc>
+        <view class="navbar__wrapper {{ activeKey === index ? 'nav-bar--active' : ''}}">
+          <image class="navbar__pic" src="https://s10.mogucdn.com/mlcdn/c45406/171115_7eaee6469k5l0e1728j7aige52e81_352x352.png" mode="aspectFit"></image>
+          <view class="navbar__text">小集市</view>
+        </view>
+      </wxc-cc>
+      <wxc-cc>
+        <view class="navbar__wrapper {{ activeKey === index ? 'nav-bar--active' : ''}}">
+          <image class="navbar__pic" src="https://s10.mogucdn.com/mlcdn/c45406/171115_7eaee6469k5l0e1728j7aige52e81_352x352.png" mode="aspectFit"></image>
+          <view class="navbar__text">许愿池</view>
+        </view>
+      </wxc-cc>
+      <wxc-cc>
+        <view class="navbar__wrapper-center {{ activeKey === index ? 'nav-bar--active' : ''}}">
+          <image class="navbar__pic" src="https://s10.mogucdn.com/mlcdn/c45406/171115_7eaee6469k5l0e1728j7aige52e81_352x352.png" mode="aspectFit"></image>
+        </view>
+      </wxc-cc>
+      <wxc-cc>
+        <view class="navbar__wrapper {{ activeKey === index ? 'nav-bar--active' : ''}}">
+          <image class="navbar__pic" src="https://s10.mogucdn.com/mlcdn/c45406/171115_7eaee6469k5l0e1728j7aige52e81_352x352.png" mode="aspectFit"></image>
+          <view class="navbar__text">搜索</view>
+        </view>
+      </wxc-cc>
+      <wxc-cc>
+        <view class="navbar__wrapper {{ activeKey === index ? 'nav-bar--active' : ''}}">
+          <image class="navbar__pic" src="https://s10.mogucdn.com/mlcdn/c45406/171115_7eaee6469k5l0e1728j7aige52e81_352x352.png" mode="aspectFit"></image>
+          <view class="navbar__text">个人中心</view>
+        </view>
+      </wxc-cc>
+    </wxc-flex>
+  </block>
+</template>
+
+<script>
+export default {
+  config: {
+    usingComponents: {
+      "wxc-cc": "@minui/wxc-cc",
+      "wxc-flex": "@minui/wxc-flex"
+    }
+  },
+  data: {
+    activeKey: 0
+  },
+  methods: {
+    onClick: function(e) {
+      console.log(
+        `ComponentId:${e.detail.componentId},you selected:${e.detail.key}`
+      );
+      const idx = e.detail.key;
+      this.setData({
+        activeKey: idx
+      });
+      this.triggerEvent("categorychange", {
+        category: this.data.tabs[idx].content
+      });
+    }
+  }
+};
+</script>
+
+<style lang="pcss">
+.navbar__wrapper-center image {
+  width: 80rpx;
+  height: 80rpx;
+  margin: 0;
+}
+.nav-bar {
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  z-index: 999;
+  box-shadow: 0 4rpx 4rpx 4rpx #ddd;
+  width: 100%;
+}
+.navbar__wrapper {
+  padding: 8rpx 0;
+}
+.navbar__pic {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 2rpx;
+}
+.navbar__text {
+  text-align: center;
+  font-size: 0.6em;
+  color: #888;
+}
+</style>

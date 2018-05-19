@@ -1,5 +1,5 @@
 <template>
-  <view>
+  <view class="wrap-page">
     <!--<layout-head></layout-head>-->
 
     <!-- wxp template -->
@@ -69,4 +69,7 @@
 
 <style>
   @import 'assets/style/reset.wxss';
+  .wrap-page {
+    margin-bottom: 100rpx;
+  }
 </style>

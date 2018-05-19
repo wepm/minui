@@ -6,7 +6,7 @@
     </wxc-flex>
     <!-- banner -->
     <swiper indicator-dots="true"
-      autoplay="false" interval="5000" duration="1000">
+      autoplay="false" interval="8000" duration="300">
       <block wx:for="{{imgUrls}}">
         <swiper-item>
           <image src="{{item}}" class="banner"/>
@@ -18,8 +18,10 @@
     <filter-index bind:tagClicked="filterChange"></filter-index>
     <!-- product card -->
     <wxc-flex class="wrap-product" cross="top" wrap="wrap">
-    <wxc-producecard wx:for="{{items}}" wx:key="index" info="{{item}}" class="item-product"></wxc-producecard>
-  </wxc-flex>
+      <wxc-producecard wx:for="{{items}}" wx:key="index" info="{{item}}" class="item-product"></wxc-producecard>
+    </wxc-flex>
+    <!-- nav bar -->
+    <navbar></navbar>
   </block>
 </template>
 
@@ -33,6 +35,7 @@ export default {
       "category-index": "../../components/category-index",
       "filter-index": "../../components/filter-index",
       "wxc-producecard": "@minui/wxc-producecard",
+      "navbar": "../../components/navbar",
       "wxc-flex": "@minui/wxc-flex"
     }
   },
