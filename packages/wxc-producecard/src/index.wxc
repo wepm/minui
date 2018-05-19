@@ -1,7 +1,14 @@
 <template>
   <view class="wxc-producecard">
-    <view>{{info.name}}</view>
-    <wxc-avatar class="avatar" src="https://s10.mogucdn.com/mlcdn/c45406/171116_62f571l0ki0ffcg94h6kg6452h497_356x356.png"></wxc-avatar>
+    <view class="name">{{info.name}}</view>
+    <image src="{{info.picture}}" class="pic"></image>
+    <wxc-avatar class="avatar" src="{{info.avatar}}"></wxc-avatar>
+    <view class="name">{{info.name}}</view>
+    <wxc-price symbol="$" class="price">{{info.price}}</wxc-price>
+    <view class="react" main="center" cross="center">
+      <view class="view">{{info.view}}</view>
+      <view class="comment">{{info.comments}}</view>
+    </view>
   </view>
 </template>
 
@@ -9,41 +16,68 @@
 export default {
   config: {
     usingComponents: {
-      'wxc-avatar': '@minui/wxc-avatar'
+      "wxc-avatar": "@minui/wxc-avatar",
+      "wxc-price": "@minui/wxc-price",
+      "wxc-flex": "@minui/wxc-flex"
     }
   },
-  behaviors: [ ],
+  behaviors: [],
   properties: {
     info: {
       type: Object,
       value: {}
     }
   },
-  data: { },
-  methods: { },
-  attached: function () {
-    console.log(this.data.info)
+  data: {},
+  methods: {},
+  attached: function() {
+    console.log(this.data.info);
   }
-}
-
-
+};
 </script>
 
 <style>
 .wxc-producecard {
   width: 100%;
-  height: 360rpx;
+  height: 480rpx;
   background: #fff;
-  border-radius: 10rpx;
+  border-radius: 15rpx;
   box-shadow: #010101 1rpx 0 0 0;
+  overflow: hidden;
 }
 .avatar {
-  width:100rpx;
-height:100rpx;
-display:inline-block;
-position:relative;
-top:140rpx;
-left:20rpx;
-
+  width: 80rpx;
+  height: 80rpx;
+  display: inline-block;
+  position: relative;
+  top: -260rpx;
+  left: 20rpx;
+  z-index: 1;
+}
+.pic {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -180rpx;
+  z-index: 0;
+}
+.name {
+  position: relative;
+  top: 360rpx;
+  left: 20rpx;
+  color: #666;
+}
+.price {
+  position: relative;
+  top: -255rpx;
+  left: 20rpx;
+  color: #2fb290;
+}
+.react {
+  position: relative;
+  top: -300rpx;
+  left: 256px;
+  width: 140rpx;
+  display: flex;
 }
 </style>

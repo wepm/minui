@@ -16,23 +16,23 @@ export default {
     items: [
       {
         name: 'Oaksard2 108',
-        avatar: 'https://s10.mogucdn.com/mlcdn/c45406/171115_7eaee6469k5l0e1728j7aige52e81_352x352.png',
-        picture: 'https://s10.mogucdn.com/mlcdn/c45406/171115_7eaee6469k5l0e1728j7aige52e81_352x352.png',
-        price: '30$',
+        avatar: 'https://s10.mogucdn.com/mlcdn/c45406/171116_62f571l0ki0ffcg94h6kg6452h497_356x356.png',
+        picture: 'https://s11.mogucdn.com/p2/170413/upload_86dkh4e886991g9lji7a6g5c530ji_400x400.jpg',
+        price: '30.00',
         view: 110,
         comments: 0
       },{
         name: 'Oaksard3 108',
-        avatar: 'https://s10.mogucdn.com/mlcdn/c45406/171115_7eaee6469k5l0e1728j7aige52e81_352x352.png',
-        picture: 'https://s10.mogucdn.com/mlcdn/c45406/171115_7eaee6469k5l0e1728j7aige52e81_352x352.png',
-        price: '30$',
+        avatar: 'https://s10.mogucdn.com/mlcdn/c45406/171116_62f571l0ki0ffcg94h6kg6452h497_356x356.png',
+        picture: 'https://s11.mogucdn.com/p2/170413/upload_86dkh4e886991g9lji7a6g5c530ji_400x400.jpg',
+        price: '32',
         view: 110,
         comments: 0
       },{
         name: 'Oaksard4 108',
-        avatar: 'https://s10.mogucdn.com/mlcdn/c45406/171115_7eaee6469k5l0e1728j7aige52e81_352x352.png',
-        picture: 'https://s10.mogucdn.com/mlcdn/c45406/171115_7eaee6469k5l0e1728j7aige52e81_352x352.png',
-        price: '30$',
+        avatar: 'https://s10.mogucdn.com/mlcdn/c45406/171116_62f571l0ki0ffcg94h6kg6452h497_356x356.png',
+        picture: 'https://s11.mogucdn.com/p2/170413/upload_86dkh4e886991g9lji7a6g5c530ji_400x400.jpg',
+        price: '3.4',
         view: 110,
         comments: 0
       }
@@ -52,7 +52,6 @@ export default {
   }
   .item {
     width: 47%;
-    height: 348rpx;
     margin: 1.5%;
     flex-grow: 0;
   }
