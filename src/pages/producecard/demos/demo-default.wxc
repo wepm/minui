@@ -1,6 +1,6 @@
 <template>
-  <wxc-flex class="wrap" cross="top" wrap="wrap">
-    <wxc-producecard wx:for="{{items}}" wx:key="index" info="{{item}}" class="item"></wxc-producecard>
+  <wxc-flex class="wrap-product" cross="top" wrap="wrap">
+    <wxc-producecard wx:for="{{items}}" wx:key="index" info="{{item}}" class="item-product"></wxc-producecard>
   </wxc-flex>
 </template>
 
@@ -45,12 +45,12 @@ export default {
 <style>
   wxc-producecard {
   }
-  .wrap {
+  .wrap-product {
     display: block;
     padding: 2%;
-    background: #696969;
+    background: #fff;
   }
-  .item {
+  .item-product {
     width: 47%;
     margin: 1.5%;
     flex-grow: 0;

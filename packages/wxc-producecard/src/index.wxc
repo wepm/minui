@@ -42,7 +42,7 @@ export default {
   height: 480rpx;
   background: #fff;
   border-radius: 15rpx;
-  box-shadow: #010101 1rpx 0 0 0;
+  box-shadow: 4rpx 4rpx 4rpx #ccc;
   overflow: hidden;
 }
 .avatar {

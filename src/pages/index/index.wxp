@@ -16,41 +16,79 @@
     <!-- category -->
     <category-index bind:categorychange="categorychange"></category-index>
     <filter-index bind:tagClicked="filterChange"></filter-index>
+    <!-- product card -->
+    <wxc-flex class="wrap-product" cross="top" wrap="wrap">
+    <wxc-producecard wx:for="{{items}}" wx:key="index" info="{{item}}" class="item-product"></wxc-producecard>
+  </wxc-flex>
   </block>
 </template>
 
 <script>
 export default {
   config: {
-    navigationBarTitleText: '小村闲置',
+    navigationBarTitleText: "小村闲置",
     usingComponents: {
-      'wxc-flex': '@minui/wxc-flex',
-      'search-index': '../../components/search-index',
-      'category-index': '../../components/category-index',
-      'filter-index': '../../components/filter-index'
+      "wxc-flex": "@minui/wxc-flex",
+      "search-index": "../../components/search-index",
+      "category-index": "../../components/category-index",
+      "filter-index": "../../components/filter-index",
+      "wxc-producecard": "@minui/wxc-producecard",
+      "wxc-flex": "@minui/wxc-flex"
     }
   },
   data: {
     imgUrls: [
-      'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+      "http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg",
+      "http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg",
+      "http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg"
+    ],
+    items: [
+      {
+        name: "Oaksard2 108",
+        avatar:
+          "https://s10.mogucdn.com/mlcdn/c45406/171116_62f571l0ki0ffcg94h6kg6452h497_356x356.png",
+        picture:
+          "https://s11.mogucdn.com/p2/170413/upload_86dkh4e886991g9lji7a6g5c530ji_400x400.jpg",
+        price: "30.00",
+        view: 110,
+        comments: 0
+      },
+      {
+        name: "Oaksard3 108",
+        avatar:
+          "https://s10.mogucdn.com/mlcdn/c45406/171116_62f571l0ki0ffcg94h6kg6452h497_356x356.png",
+        picture:
+          "https://s11.mogucdn.com/p2/170413/upload_86dkh4e886991g9lji7a6g5c530ji_400x400.jpg",
+        price: "32",
+        view: 110,
+        comments: 0
+      },
+      {
+        name: "Oaksard4 108",
+        avatar:
+          "https://s10.mogucdn.com/mlcdn/c45406/171116_62f571l0ki0ffcg94h6kg6452h497_356x356.png",
+        picture:
+          "https://s11.mogucdn.com/p2/170413/upload_86dkh4e886991g9lji7a6g5c530ji_400x400.jpg",
+        price: "3.4",
+        view: 110,
+        comments: 0
+      }
     ]
   },
-  categorychange (e) {
-    console.log(e)
+  categorychange(e) {
+    console.log(e);
     this.setData({
       category: e.detail.category,
       tagFilter: null
-    })
+    });
   },
-  filterChange (e) {
-    console.log(e)
+  filterChange(e) {
+    console.log(e);
     this.setData({
       tagFilter: e.detail.value
-    })
+    });
   }
-}
+};
 </script>
 
 <style>
@@ -60,5 +98,15 @@ page {
 .banner {
   width: 100%;
   height: 500rpx;
+}
+.wrap-product {
+  display: block;
+  padding: 2%;
+  background: #fff;
+}
+.item-product {
+  width: 47%;
+  margin: 1.5%;
+  flex-grow: 0;
 }
 </style>
