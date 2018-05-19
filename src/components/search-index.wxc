@@ -2,7 +2,7 @@
   <view class="search-wrap">
     <wxc-icon class="search-icon" type="location" size="44" color="#2FB290"></wxc-icon>
     <view class="search-location">Davis</view>
-    <wxc-search class="search" radius="30" mode="static" placeholder="iphoneX"></wxc-search>
+    <wxc-search class="search" radius="30" mode="static" placeholder="点击搜索商品"></wxc-search>
   </view>
 
 </template>

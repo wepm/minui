@@ -14,7 +14,7 @@
         </view>
       </wxc-cc>
       <wxc-cc>
-        <view class="navbar__wrapper-center {{ activeKey === index ? 'nav-bar--active' : ''}}">
+        <view class="navbar__wrapper-center {{ activeKey === index ? 'nav-bar--active' : ''}}" bindtap="showPopup">
           <image class="navbar__pic" src="https://s10.mogucdn.com/mlcdn/c45406/171115_7eaee6469k5l0e1728j7aige52e81_352x352.png" mode="aspectFit"></image>
         </view>
       </wxc-cc>
@@ -31,6 +31,17 @@
         </view>
       </wxc-cc>
     </wxc-flex>
+    <wxc-popup class="J_Popup" animation-mode="bottom" align="bottom">
+        <view class="list-wrap">
+
+    <view class="list-item">
+      <wxc-list title="标题文字" desc="内容描述" arrow="{{false}}"></wxc-list>
+      <wxc-list title="标题文字" desc="内容描述" arrow="{{false}}"></wxc-list>
+      <wxc-list title="标题文字" desc="内容描述" arrow="{{false}}"></wxc-list>
+      <wxc-list title="标题文字" desc="内容描述" arrow="{{false}}"></wxc-list>
+      </view>
+      </view>
+    </wxc-popup>
   </block>
 </template>
 
@@ -39,7 +50,9 @@ export default {
   config: {
     usingComponents: {
       "wxc-cc": "@minui/wxc-cc",
-      "wxc-flex": "@minui/wxc-flex"
+      "wxc-flex": "@minui/wxc-flex",
+      'wxc-popup': '@minui/wxc-popup',
+      'wxc-list': '@minui/wxc-list',
     }
   },
   data: {
@@ -57,6 +70,14 @@ export default {
       this.triggerEvent("categorychange", {
         category: this.data.tabs[idx].content
       });
+    },
+    showPopup() {
+      let popupComponent = this.selectComponent('.J_Popup');
+      popupComponent && popupComponent.show();
+    },
+    hidePopup() {
+      let popupComponent = this.selectComponent('.J_Popup');
+      popupComponent && popupComponent.hide();
     }
   }
 };
@@ -72,7 +93,7 @@ export default {
   position: fixed;
   bottom: 0;
   background: #fff;
-  z-index: 999;
+  z-index: 999999999!important;
   box-shadow: 0 4rpx 4rpx 4rpx #ddd;
   width: 100%;
 }
@@ -89,4 +110,23 @@ export default {
   font-size: 0.6em;
   color: #888;
 }
+.popup__content {
+  width: 100%;
+  height: 500rpx;
+  line-height: 500rpx;
+  background: #ffffff;
+  text-align: center;
+}
+.list-wrap {
+    width: 100%;
+    background: #efefef;
+    padding-bottom: 108rpx;
+  }
+  .list-item {
+    background: #fff;
+    margin-bottom: 30rpx;
+  }
+  .list-item:last-child {
+    margin: 0;
+  }
 </style>
