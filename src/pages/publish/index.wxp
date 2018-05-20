@@ -42,7 +42,7 @@ export default {
       'wxc-panel': '@minui/wxc-panel',
       'wxc-input': '@minui/wxc-input',
       'wxc-button': '@minui/wxc-button',
-      'tag': '../../components/tag',
+      'tag': '@minui/xc-tag-btn',
       'zan-tag': '@minui/wxc-tag'
     }
   },
