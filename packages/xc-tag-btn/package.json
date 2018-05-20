@@ -1,0 +1,16 @@
+{
+  "name": "xc-tag-btn",
+  "version": "1.0.0",
+  "description": "标签按钮 - 小程序组件",
+  "main": "dist/index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meili/minui/tree/master/packages/xc-tag-btn"
+  },
+  "author": "",
+  "license": "MIT",
+  "minConfig": {
+    "component": true
+  }
+}

@@ -8,7 +8,7 @@
 export default {
   config: {
     usingComponents: {
-      'tag': './tag',
+      'tag': '@minui/xc-tag-btn',
       'wxc-tab': '@minui/wxc-tab',
       'wxc-tab-panel': '@minui/wxc-tab/panel',
       'wxc-tab-label': '@minui/wxc-tab/label',

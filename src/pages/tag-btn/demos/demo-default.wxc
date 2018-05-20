@@ -1,0 +1,18 @@
+<template>
+  <xc-tag-btn></xc-tag-btn>
+</template>
+
+<script>
+export default {
+  config: {
+    usingComponents: {
+      'xc-tag-btn': 'xc-tag-btn'
+    }
+  },
+  data: { },
+  methods: { }
+}
+</script>
+
+<style>
+</style>
