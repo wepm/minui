@@ -1,6 +1,6 @@
 <template>
   <scroll-view scroll-x="true" class="filter-list">
-      <tag item="{{item}}" clicked="{{activeKey === item.name_of_tag}}" typeI="searchTops"  bind:click='onClick' wx:for="{{filters}}" wx:key="{{index}}"/>
+      <xc-tag-btn item="{{item}}" clicked="{{activeKey === item.name_of_tag}}" typeI="searchTops"  bind:click='onClick' wx:for="{{filters}}" wx:key="{{index}}"/>
   </scroll-view>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
   config: {
     usingComponents: {
-      'tag': '@minui/xc-tag-btn',
+      'xc-tag-btn': '@minui/xc-tag-btn',
       'wxc-tab': '@minui/wxc-tab',
       'wxc-tab-panel': '@minui/wxc-tab/panel',
       'wxc-tab-label': '@minui/wxc-tab/label',

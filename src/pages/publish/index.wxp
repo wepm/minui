@@ -22,7 +22,7 @@
       <wxc-panel border="{{false}}" >
         <view class="activity-tags">
           <view class="title">活动标签</view>
-          <tag item="{{item}}" clicked="{{activeKey === item.name_of_tag}}" typeI="searchTops"  bind:click='onClick' wx:for="{{tags}}" wx:key="{{index}}"/>
+          <xc-tag-btn item="{{item}}" clicked="{{activeKey === item.name_of_tag}}" typeI="searchTops"  bind:click='onClick' wx:for="{{tags}}" wx:key="{{index}}"/>
         </view>
       </wxc-panel>
     </view>
@@ -42,7 +42,7 @@ export default {
       'wxc-panel': '@minui/wxc-panel',
       'wxc-input': '@minui/wxc-input',
       'wxc-button': '@minui/wxc-button',
-      'tag': '@minui/xc-tag-btn',
+      'xc-tag-btn': '@minui/xc-tag-btn',
       'zan-tag': '@minui/wxc-tag'
     }
   },
