@@ -35,10 +35,9 @@
         <view class="list-wrap">
 
     <view class="list-item">
-      <wxc-list title="标题文字" desc="内容描述" arrow="{{false}}"></wxc-list>
-      <wxc-list title="标题文字" desc="内容描述" arrow="{{false}}"></wxc-list>
-      <wxc-list title="标题文字" desc="内容描述" arrow="{{false}}"></wxc-list>
-      <wxc-list title="标题文字" desc="内容描述" arrow="{{false}}"></wxc-list>
+      <wxc-list title="标题文字" desc="内容描述" arrow="{{false}}" bindtap="goPublish"></wxc-list>
+      <wxc-list title="标题文字" desc="内容描述" arrow="{{false}}" bindtap="goPublish"></wxc-list>
+      <wxc-list title="标题文字" desc="内容描述" arrow="{{false}}" bindtap="goPublish"></wxc-list>
       </view>
       </view>
     </wxc-popup>
@@ -70,6 +69,9 @@ export default {
       this.triggerEvent("categorychange", {
         category: this.data.tabs[idx].content
       });
+    },
+    goPublish () {
+      wx.navigateTo({url:'/pages/publish/index'})
     },
     showPopup() {
       let popupComponent = this.selectComponent('.J_Popup');
