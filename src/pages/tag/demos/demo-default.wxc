@@ -1,0 +1,19 @@
+<template>
+  <zan-tag type="primary">崭新出场</zan-tag>
+  <zan-tag type="primary" disabled>略有磨损</zan-tag>
+</template>
+
+<script>
+export default {
+  config: {
+    usingComponents: {
+      'zan-tag': '@minui/wxc-tag'
+    }
+  },
+  data: { },
+  methods: { }
+}
+</script>
+
+<style>
+</style>

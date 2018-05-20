@@ -1,0 +1,85 @@
+<template>
+  <view class="container">
+    <view class="input-wrap">
+      <wxc-input type="text" placeholder="请填写商品名称"></wxc-input>
+      <wxc-input type="text" placeholder="填写描述"></wxc-input>
+      <wxc-list title="分类" desc=""></wxc-list>
+      <wxc-list title="价格" desc=""></wxc-list>
+      <wxc-panel border="{{false}}" >
+        <view class="activity-tags">
+          <view class="title">状态</view>
+          <view>
+            <wxc-flex class="tags-z" main="start" cross="center">
+              <zan-tag type="primary">崭新出场</zan-tag>
+              <zan-tag type="primary" disabled>略有磨损</zan-tag>
+              <zan-tag type="primary" disabled>久经沙场</zan-tag>
+              <zan-tag type="primary" disabled>破损不堪</zan-tag>
+            </wxc-flex>
+          </view>
+        </view>
+      </wxc-panel>
+      <wxc-input type="text" title="#标签" placeholder="填写商品更多特征"></wxc-input>
+      <wxc-panel border="{{false}}" >
+        <view class="activity-tags">
+          <view class="title">活动标签</view>
+          <tag item="{{item}}" clicked="{{activeKey === item.name_of_tag}}" typeI="searchTops"  bind:click='onClick' wx:for="{{tags}}" wx:key="{{index}}"/>
+        </view>
+      </wxc-panel>
+    </view>
+    <view class="button-small-wrap">
+      <wxc-button btnStyle="width: 360rpx;background: #2FB290;border-radius: 66rpx;color: #fff;">发  布</wxc-button>
+    </view>
+  </view>
+</template>
+
+<script>
+export default {
+  config: {
+    navigationBarTitleText: '上传页',
+    usingComponents: {
+      'wxc-list': '@minui/wxc-list',
+      "wxc-flex": "@minui/wxc-flex",
+      'wxc-panel': '@minui/wxc-panel',
+      'wxc-input': '@minui/wxc-input',
+      'wxc-button': '@minui/wxc-button',
+      'tag': '../../components/tag',
+      'zan-tag': '@minui/wxc-tag'
+    }
+  },
+  data: {
+    tags: [
+      {
+        "post_tag_id": 1,
+        "name_of_tag": "#毕业了"
+      },
+      {
+        "post_tag_id": 2,
+        "name_of_tag": "#开学趴"
+      },
+      {
+        "name_of_tag": "#Picnic Day"
+      }
+    ]
+  }
+}
+</script>
+
+<style>
+.container {
+    width: 100%;
+  }
+  .input-wrap {
+    background: #fff;
+  }
+  .activity-tags{
+    padding: 20rpx;
+  }
+  zan-tag{
+    margin-right: 20rpx;
+  }
+  .button-small-wrap {
+    width: 100%;
+    text-align:center;
+    margin-top:30rpx;
+  }
+</style>

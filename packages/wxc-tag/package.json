@@ -1,0 +1,16 @@
+{
+  "name": "@minui/wxc-tag",
+  "version": "1.0.0",
+  "description": "标签 - 小程序组件",
+  "main": "dist/index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meili/minui/tree/master/packages/wxc-tag"
+  },
+  "author": "",
+  "license": "MIT",
+  "minConfig": {
+    "component": true
+  }
+}

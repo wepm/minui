@@ -1,0 +1,122 @@
+<template>
+  <view class="wxc-tag">
+    
+    <view 
+      class="zan-tag {{type ? 'zan-tag--'+type : ''}} {{disabled ? 'zan-tag--disabled' : ''}} {{plain ? 'zan-tag--plain' : ''}}"
+    >
+      <slot></slot>
+    </view>
+  </view>
+</template>
+
+<script>
+export default {
+  config: {
+    usingComponents: { }
+  },
+  behaviors: [ ],
+  properties: {
+    type: {
+      type: String,
+    },
+    plain: {
+      type: Boolean,
+      value: false,
+    },
+    disabled: {
+      type: Boolean,
+      value: false,
+    }
+  },
+  data: { },
+  methods: { }
+}
+
+
+</script>
+
+<style>
+.zan-tag {
+	display:inline-block;
+  position:relative;
+  box-sizing:border-box;
+  padding:10rpx 20rpx;
+  border-radius:15rpx;
+  font-size:.8em;
+  background:#c9c9c9;
+  text-align:center;
+  color:#fff;
+}
+
+.zan-tag::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200%;
+	height: 200%;
+	transform: scale(.5);
+	transform-origin: 0 0;
+	pointer-events: none;
+	box-sizing: border-box;
+	border: 0 solid #e5e5e5;
+	border-width: 1px;
+	border-radius: 4px
+}
+
+.zan-tag--plain {
+	color: #c9c9c9;
+	background: #fff
+}
+
+.zan-tag--primary {
+	color: #fff;
+	background-color: #4b0
+}
+
+.zan-tag--primary::after {
+	border-color: #4b0
+}
+
+.zan-tag--primary.zan-tag--plain {
+	color: #4b0;
+	background: #fff
+}
+
+.zan-tag--danger {
+	color: #fff;
+	background: #f44
+}
+
+.zan-tag--danger::after {
+	border-color: #f44
+}
+
+.zan-tag--danger.zan-tag--plain {
+	color: #f44;
+	background: #fff
+}
+
+.zan-tag--warn {
+	color: #fff;
+	background: #f85
+}
+
+.zan-tag--warn::after {
+	border-color: #f85
+}
+
+.zan-tag--warn.zan-tag--plain {
+	color: #f85;
+	background: #fff
+}
+
+.zan-tag--disabled {
+	color: #999!important;
+	background: #e5e5e5
+}
+
+.zan-tag--disabled::after {
+	border-color: #ccc
+}
+</style>
