@@ -1,11 +1,26 @@
 {
   "style": {
-    "brandColor": "#FF0077",
+    "brandColor": "##2FB290",
     "controlColor": "#FF5777",
     "mainHeadingColor": "#333333",
     "subHeadingColor": "#666666",
     "darkPromptColor": "#999999",
     "splitLineColor": "#ECECEC",
     "backgroundColour": "#EFEFEF"
+  },
+  "prefix": "xc",
+  "dest": "dist",
+  "npm": {
+    "dest": "dist/packages",
+    "scope": ""
+  },
+  "compilers": {
+    "babel": {
+      "sourceMaps": "inline",
+      "presets": [
+      ],
+      "plugins": [
+      ]
+    }
   }
 }
