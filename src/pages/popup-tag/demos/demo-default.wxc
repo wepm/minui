@@ -1,0 +1,18 @@
+<template>
+  <wxc-popup-tag></wxc-popup-tag>
+</template>
+
+<script>
+export default {
+  config: {
+    usingComponents: {
+      'wxc-popup-tag': '@minui/wxc-popup-tag'
+    }
+  },
+  data: { },
+  methods: { }
+}
+</script>
+
+<style>
+</style>

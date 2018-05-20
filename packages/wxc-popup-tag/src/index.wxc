@@ -1,0 +1,110 @@
+<template>
+
+  <view class="wxc-popup-tag">
+    <button bindtap="showPopup">居下，有动画</button>
+    <wxc-popup class="J_Popup" animation-mode="bottom" align="bottom">
+      <view class="wraper">
+        <view class="header">
+          <view class="cancel">取消</view>
+          <view class="confirm">确定</view>
+        </view>
+        <wxc-cc>
+          <wxc-flex dir="top">
+            <view class="condition-wrap">
+              <view class="title">
+                小区环境
+              </view>
+              <wxc-flex wrap="wrap">
+                <xc-tag-btn item="{{item}}" clicked="{{activeKey === item.name_of_tag}}" typeI="searchTops"  bind:click='onClick' wx:for="{{tags}}" wx:key="{{index}}"/>
+              </wxc-flex>
+            </view>
+            <view class="condition-wrap">
+              <view class="title">
+                周边环境
+              </view>
+              <wxc-flex wrap="wrap">
+                <xc-tag-btn item="{{item}}" clicked="{{activeKey === item.name_of_tag}}" typeI="searchTops"  bind:click='onClick' wx:for="{{tags}}" wx:key="{{index}}"/>
+              </wxc-flex>
+            </view>
+          </wxc-flex>
+        </wxc-cc>
+      </view>
+    </wxc-popup>
+
+  </view>
+</template>
+
+<script>
+export default {
+  config: {
+    usingComponents: {
+      'wxc-cc': '@minui/wxc-cc',
+      'wxc-flex': '@minui/wxc-flex',
+      'wxc-popup': '@minui/wxc-popup',
+      'xc-tag-btn': '@minui/xc-tag-btn'
+    }
+  },
+  behaviors: [ ],
+  properties: { },
+  data: {
+    tags: [
+      {
+        "post_tag_id": 1,
+        "name_of_tag": "#泳池"
+      },
+      {
+        "post_tag_id": 2,
+        "name_of_tag": "#健身房"
+      },
+      {
+        "name_of_tag": "#学习室"
+      }
+    ]
+  },
+  methods: {
+    showPopup() {
+      let popupComponent = this.selectComponent('.J_Popup');
+      popupComponent && popupComponent.show();
+    },
+    hidePopup() {
+      let popupComponent = this.selectComponent('.J_Popup');
+      popupComponent && popupComponent.hide();
+    }
+  }
+}
+
+
+</script>
+
+<style lang="less">
+.wxc-popup-tag {
+}
+.wraper {
+  background: white;
+  width: 100%;
+}
+.header {
+  height: 80rpx;
+  border-bottom: solid 3rpx #eee;
+  padding: 20rpx;
+}
+.cancel {
+  float: left;
+}
+.confirm {
+  float: right;
+  color: @brandColor;
+}
+.cancel,
+.confirm {
+  margin: 10rpx;
+}
+.title {
+  width: 100%;
+  text-align: center;
+  font-weight: bolder;
+}
+.condition-wrap {
+  margin: 40rpx;
+}
+</style>

@@ -1,0 +1,16 @@
+{
+  "name": "@minui/wxc-popup-tag",
+  "version": "1.0.0",
+  "description": "弹出层选择tag - 小程序组件",
+  "main": "dist/index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meili/minui/tree/master/packages/wxc-popup-tag"
+  },
+  "author": "",
+  "license": "MIT",
+  "minConfig": {
+    "component": true
+  }
+}

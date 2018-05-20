@@ -1,6 +1,6 @@
 {
   "style": {
-    "brandColor": "##2FB290",
+    "brandColor": "#2FB290",
     "controlColor": "#FF5777",
     "mainHeadingColor": "#333333",
     "subHeadingColor": "#666666",
@@ -11,8 +11,7 @@
   "prefix": "xc",
   "dest": "dist",
   "npm": {
-    "dest": "dist/packages",
-    "scope": ""
+    "dest": "dist/packages"
   },
   "compilers": {
     "babel": {
