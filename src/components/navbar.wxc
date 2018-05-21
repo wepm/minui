@@ -3,13 +3,13 @@
     <wxc-flex main="around" class="nav-bar">
       <wxc-cc>
         <view class="navbar__wrapper {{ activeKey === index ? 'nav-bar--active' : ''}}">
-          <image class="navbar__pic" src="https://s10.mogucdn.com/mlcdn/c45406/171115_7eaee6469k5l0e1728j7aige52e81_352x352.png" mode="aspectFit"></image>
+          <image class="navbar__pic" src="../images/tabbar/xjs.png" mode="aspectFit"></image>
           <view class="navbar__text">小集市</view>
         </view>
       </wxc-cc>
       <wxc-cc>
         <view class="navbar__wrapper {{ activeKey === index ? 'nav-bar--active' : ''}}">
-          <image class="navbar__pic" src="https://s10.mogucdn.com/mlcdn/c45406/171115_7eaee6469k5l0e1728j7aige52e81_352x352.png" mode="aspectFit"></image>
+          <image class="navbar__pic" src="../images/tabbar/xyc.png" mode="aspectFit"></image>
           <view class="navbar__text">许愿池</view>
         </view>
       </wxc-cc>
@@ -20,13 +20,13 @@
       </wxc-cc>
       <wxc-cc>
         <view class="navbar__wrapper {{ activeKey === index ? 'nav-bar--active' : ''}}">
-          <image class="navbar__pic" src="https://s10.mogucdn.com/mlcdn/c45406/171115_7eaee6469k5l0e1728j7aige52e81_352x352.png" mode="aspectFit"></image>
+          <image class="navbar__pic" src="../images/tabbar/explor.png" mode="aspectFit"></image>
           <view class="navbar__text">搜索</view>
         </view>
       </wxc-cc>
       <wxc-cc>
         <view class="navbar__wrapper {{ activeKey === index ? 'nav-bar--active' : ''}}">
-          <image class="navbar__pic" src="https://s10.mogucdn.com/mlcdn/c45406/171115_7eaee6469k5l0e1728j7aige52e81_352x352.png" mode="aspectFit"></image>
+          <image class="navbar__pic" src="../images/tabbar/me.png" mode="aspectFit"></image>
           <view class="navbar__text">个人中心</view>
         </view>
       </wxc-cc>
