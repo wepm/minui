@@ -1,0 +1,15 @@
+
+.searchTops{
+  padding:27rpx;
+  margin-top:60rpx;
+
+}
+.searchTops .title{
+  color: #555;
+  font-weight: bold;
+  font-size:42rpx;
+}
+.searchTops .items-box{
+  display: block;
+  margin-top: 20rpx;
+}

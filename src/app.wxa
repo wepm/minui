@@ -19,6 +19,7 @@
       pages: [
         "pages/index/index",
         "pages/publish/index",
+        "pages/search/index",
       ],
       window: {
         backgroundTextStyle: 'dark',

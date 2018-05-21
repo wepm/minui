@@ -1,0 +1,11 @@
+<template name="searchTops">
+  <view class="searchTops">
+    <text class="title">热门搜索</text>
+    <view class="items-box">
+      <block wx:for="{{searchTops.items}}" wx:key="{{index}}">
+        <tag item="{{item}}" clicked="{{searchTops.clicked}}" typeI="searchTops"  bind:click='click'/>
+      </block>
+    </view>
+    
+  </view>
+</template>

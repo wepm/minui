@@ -1,0 +1,26 @@
+
+.searchHistory{
+  padding:27rpx;
+  margin-top:60rpx;
+}
+.searchHistory .titlebox{
+  display: flex;
+  justify-content: space-between;
+}
+.searchHistory .title{
+  color: #555;
+  font-weight: bold;
+  font-size:42rpx;
+}
+.searchHistory .items-box{
+  display: block;
+  margin-top: 20rpx;
+}
+.searchHistory .titleicon{
+  margin-left:10rpx;
+  width:46rpx;
+  height:46rpx;
+  border-radius:50%;
+  display:inline-block;
+  overflow:hidden;
+}

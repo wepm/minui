@@ -1,0 +1,14 @@
+<template name="searchHistory">
+  <view class="searchHistory">
+    <view class="titlebox">
+      <text class="title">搜索历史</text>
+      <image class="titleicon" src='../../../images/trash.png' bindtap='cleanHistory'></image>
+    </view>
+    <view class="items-box">
+      <block wx:for="{{searchHistory.items}}" wx:key="{{index}}">
+        <tag item="{{item}}" clicked="{{searchHistory.clicked}}" typeI="searchHistory" deletable="{{true}}" bind:setData="setDataC" bind:click='click' bind:tag_delete='deleteHistory'/>
+      </block>
+    </view>
+    
+  </view>
+</template>
