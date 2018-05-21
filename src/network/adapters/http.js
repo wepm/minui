@@ -1,17 +1,17 @@
 'use strict';
 
-var utils = require('./../utils');
-var settle = require('./../core/settle');
-var buildURL = require('./../helpers/buildURL');
-var http = require('http');
-var https = require('https');
-var httpFollow = require('follow-redirects').http;
-var httpsFollow = require('follow-redirects').https;
-var url = require('url');
-var zlib = require('zlib');
-var pkg = require('./../../package.json');
-var createError = require('../core/createError');
-var enhanceError = require('../core/enhanceError');
+// var utils = require('./../utils');
+// var settle = require('./../core/settle');
+// var buildURL = require('./../helpers/buildURL');
+// var http = require('http');
+// var https = require('https');
+// var httpFollow = require('follow-redirects').http;
+// var httpsFollow = require('follow-redirects').https;
+// var url = require('url');
+// var zlib = require('zlib');
+// var pkg = require('./../../package.json');
+// var createError = require('../core/createError');
+// var enhanceError = require('../core/enhanceError');
 
 /*eslint consistent-return:0*/
 module.exports = function httpAdapter(config) {
