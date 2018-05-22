@@ -20,7 +20,7 @@
         <view class="demo-tab__label">
           <wxc-cc>
             <view class="demo__wrapper {{ activeKey === index ? 'demo-tab--active' : ''}}">
-              <image class="demo__pic" src="https://s10.mogucdn.com/mlcdn/c45406/171115_7eaee6469k5l0e1728j7aige52e81_352x352.png" mode="aspectFit"></image>
+              <image class="demo__pic" src="../images/category/{{ activeKey === index ? 'on' : 'off'}}/{{tab.content}}.png" mode="aspectFit"></image>
               <view class="demo__text">{{tab.title}}</view>
             </view>
           </wxc-cc>
@@ -61,12 +61,12 @@ export default {
   data: {
     tabs: [
       {title: '全部', content: 'all'},
-      {title: '技能服务', content: 'jnfw'},
-      {title: '房屋出租', content: 'fwcz'},
-      {title: '电子数码', content: 'dzsm'},
-      {title: '书籍教具', content: 'sjjj'},
-      {title: '家具', content: 'jj'},
-      {title: '其他', content: 'qt'},
+      {title: '技能服务', content: 'jinengfuwu'},
+      {title: '房屋出租', content: 'fangwuchuzu'},
+      {title: '电子数码', content: 'dianzishuma'},
+      {title: '书籍教具', content: 'shujijiaoju'},
+      {title: '家具', content: 'jiajuchuju'},
+      {title: '其他', content: 'other'},
     ],
     activeKey: 0
   },

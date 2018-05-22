@@ -19,12 +19,13 @@
       pages: [
         "pages/index/index",
         "pages/publish/index",
+        "pages/search/index",
       ],
       window: {
         backgroundTextStyle: 'dark',
         backgroundColor: '#efefef',
         navigationBarBackgroundColor: '#ffffff',
-        navigationBarTitleText: 'MinUI组件库',
+        navigationBarTitleText: '小村闲置',
         navigationBarTextStyle: 'black'
       },
       // tabBar: {
