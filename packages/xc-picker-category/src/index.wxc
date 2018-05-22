@@ -1,0 +1,71 @@
+<template>
+  <view class="xc-picker-category">
+    <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+      <!-- {{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}} -->
+      <slot></slot>
+    </picker>
+  </view>
+</template>
+
+<script>
+export default {
+  config: {
+    usingComponents: {}
+  },
+  behaviors: [],
+  properties: {},
+  data: {
+    multiIndex: [0, 0],
+    multiArray: [
+      ["手机数码", "书籍教具", "家具厨具", "美妆时尚", "家用电器", "文体器材"],
+      ["摄影配件", "电脑平板", "手机配件", "苹果配件", "游戏设备&软件"]
+    ]
+  },
+  methods: {
+    bindMultiPickerChange: function(e) {
+      console.log("picker发送选择改变，携带值为", e.detail.value);
+      this.setData({
+        multiIndex: e.detail.value
+      });
+      this.triggerEvent('pickcategory', {
+        category1: this.data.multiArray[0][this.data.multiIndex[0]],
+        category2: this.data.multiArray[1][this.data.multiIndex[1]]
+      })
+    },
+    bindMultiPickerColumnChange: function(e) {
+      console.log("修改的列为", e.detail.column, "，值为", e.detail.value);
+      var data = {
+        multiArray: this.data.multiArray,
+        multiIndex: this.data.multiIndex
+      };
+      data.multiIndex[e.detail.column] = e.detail.value;
+      switch (e.detail.column) {
+        case 0:
+          switch (data.multiIndex[0]) {
+            case 0:
+              data.multiArray[1] = ["摄影配件", "电脑平板", "手机配件", "苹果配件", "游戏设备&软件"]
+              break;
+            case 1:
+              data.multiArray[1] = ["书籍", "教具", "书籍教具"];
+              break;
+            case 2:
+              data.multiArray[1] = ["家具", "厨具", "家具厨具"];
+              break;
+          }
+          data.multiIndex[1] = 0;
+          break;
+        case 1:
+
+          console.log(data.multiIndex);
+          break;
+      }
+      this.setData(data);
+    }
+  }
+};
+</script>
+
+<style>
+.xc-picker-category {
+}
+</style>

@@ -1,0 +1,18 @@
+<template>
+  <xc-picker-category></xc-picker-category>
+</template>
+
+<script>
+export default {
+  config: {
+    usingComponents: {
+      'xc-picker-category': '@minui/xc-picker-category'
+    }
+  },
+  data: { },
+  methods: { }
+}
+</script>
+
+<style>
+</style>

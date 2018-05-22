@@ -3,7 +3,9 @@
     <view class="input-wrap">
       <wxc-input type="text" placeholder="请填写商品名称"></wxc-input>
       <wxc-input type="text" placeholder="填写描述"></wxc-input>
-      <wxc-list title="分类" desc="{{category1}},{{category2}}"></wxc-list>
+      <picker-category bind:pickcategory="onPickcategory">
+        <wxc-list title="分类" desc="{{category1}},{{category2}}"></wxc-list>
+      </picker-category>
       <wxc-list title="价格" desc="${{price}}"></wxc-list>
       <wxc-panel border="{{false}}" >
         <view class="activity-tags">
@@ -43,7 +45,8 @@ export default {
       'wxc-input': '@minui/wxc-input',
       'wxc-button': '@minui/wxc-button',
       'xc-tag-btn': '@minui/xc-tag-btn',
-      'zan-tag': '@minui/wxc-tag'
+      'zan-tag': '@minui/wxc-tag',
+      'picker-category': '@minui/xc-picker-category'
     }
   },
   data: {
@@ -63,7 +66,14 @@ export default {
         "name_of_tag": "#Picnic Day"
       }
     ]
-  }
+  },
+  onPickcategory (e) {
+      // console.log(e)
+      this.setData({
+        category1: e.detail.category1,
+        category2: e.detail.category2,
+      })
+    }
 }
 </script>
 

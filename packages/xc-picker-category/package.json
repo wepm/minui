@@ -1,0 +1,16 @@
+{
+  "name": "@minui/xc-picker-category",
+  "version": "1.0.0",
+  "description": "分类选择器 - 小程序组件",
+  "main": "dist/index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meili/minui/tree/master/packages/xc-picker-category"
+  },
+  "author": "",
+  "license": "MIT",
+  "minConfig": {
+    "component": true
+  }
+}
