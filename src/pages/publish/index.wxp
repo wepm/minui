@@ -3,17 +3,17 @@
     <view class="input-wrap">
       <wxc-input type="text" placeholder="请填写商品名称"></wxc-input>
       <wxc-input type="text" placeholder="填写描述"></wxc-input>
-      <wxc-list title="分类" desc=""></wxc-list>
-      <wxc-list title="价格" desc=""></wxc-list>
+      <wxc-list title="分类" desc="{{category1}},{{category2}}"></wxc-list>
+      <wxc-list title="价格" desc="${{price}}"></wxc-list>
       <wxc-panel border="{{false}}" >
         <view class="activity-tags">
           <view class="title">状态</view>
           <view>
             <wxc-flex class="tags-z" main="start" cross="center">
               <zan-tag type="primary">崭新出场</zan-tag>
-              <zan-tag type="primary" disabled>略有磨损</zan-tag>
-              <zan-tag type="primary" disabled>久经沙场</zan-tag>
-              <zan-tag type="primary" disabled>破损不堪</zan-tag>
+              <zan-tag type="primary" plain>略有磨损</zan-tag>
+              <zan-tag type="primary" plain>久经沙场</zan-tag>
+              <zan-tag type="primary" plain>破损不堪</zan-tag>
             </wxc-flex>
           </view>
         </view>
@@ -47,6 +47,9 @@ export default {
     }
   },
   data: {
+    category1: '美妆时尚',
+    category2: '护肤',
+    price: '20',
     tags: [
       {
         "post_tag_id": 1,

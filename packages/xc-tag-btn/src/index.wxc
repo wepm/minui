@@ -74,7 +74,7 @@ export default {
 }
 .tag_items .itemtitle{
   color: #777;
-  font-size: 36rpx;
+  font-size: .9em;
   max-width:270rpx;
   overflow:hidden;
   text-overflow:ellipsis;
