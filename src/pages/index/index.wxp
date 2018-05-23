@@ -20,6 +20,12 @@
     <wxc-flex class="wrap-product" cross="top" wrap="wrap">
       <wxc-producecard wx:for="{{items}}" wx:key="index" info="{{item}}" class="item-product"></wxc-producecard>
     </wxc-flex>
+    <wxc-loadmore
+      is-end="{{true}}"
+      text="到底啦"
+      icon="https://s10.mogucdn.com/mlcdn/c45406/171016_47j96cl3hdhhdf7ajg8hg2kd13gdc_400x400.png"
+    >
+    </wxc-loadmore>
     <!-- nav bar -->
     <navbar></navbar>
   </block>
@@ -36,7 +42,8 @@ export default {
       "filter-index": "../../components/filter-index",
       "wxc-producecard": "@minui/wxc-producecard",
       "navbar": "../../components/navbar",
-      "wxc-flex": "@minui/wxc-flex"
+      "wxc-flex": "@minui/wxc-flex",
+      'wxc-loadmore': '@minui/wxc-loadmore'
     }
   },
   data: {
